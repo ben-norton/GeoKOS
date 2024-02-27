@@ -50,17 +50,11 @@ The following table contains a modified version of the KOS Types Vocabulary as p
 
 
 ## References
+### Key Publications
 Hodge, G. (2000). Systems of Knowledge Organization for Digital libraries. Beyond traditional authority files. Washington, DC: the Council on Library and Information Resources.   http://www.clir.org/pubs/reports/pub91/contents.html
 Zeng ML (2008) Knowledge Organization Systems. Knowl. Org. 35(2008)No.2/No.3  
 Tudhope D, Koch T, Heery R (2006) Terminology Services and TechnologyJISC state of the art review. http://www.ukoln.ac.uk/terminology/JISC-review2006.html  
-
-### Ontologies
-| Name | URL |
-| -- | -- |
-| FaBiO, the FRBR-aligned Bibliographic Ontology | https://sparontologies.github.io/fabio/current/fabio.html |
-| KOS Types Vocabulary | https://nkos.dublincore.org/nkos-type.html |
-
-
+### Term Sources
 [1] http://www.sparontologies.net/ontologies/fabio  
 [2] NKOS definitions. Based on KOS Taxonomy [2]http://nkos.slis.kent.edu/KOS_taxonomy.htm  
 [3] ISO25964-2:2013. Information and documentation -- Thesauri and interoperability with other vocabularies. Part 2: Interoperability with other vocabularies.   
@@ -68,5 +62,12 @@ Tudhope D, Koch T, Heery R (2006) Terminology Services and TechnologyJISC state 
 [5] NKOS definitions. Based on ANSI/NISO Z39.19-2005 (R2010). Guidelines for the construction, format, and management of monolingual controlled vocabularies. ISBN: 1-880124-65-3. Available at: https://www.niso.org/publications/ansiniso-z3919-2005-r2010  
 [6] W3C Linked Data Glossary. W3C Working Group Note 27 June 2013. Available at: https://www.w3.org/TR/2013/NOTE-ld-glossary-20130627/  
 [7] ISO/IEC 11179-3 Section 11.3.2.5  
+
+## Ontologies
+| Name | URL |
+| -- | -- |
+| FaBiO, the FRBR-aligned Bibliographic Ontology | https://sparontologies.github.io/fabio/current/fabio.html |
+| KOS Types Vocabulary | https://nkos.dublincore.org/nkos-type.html |
+
 
 
