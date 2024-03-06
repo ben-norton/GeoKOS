@@ -1,4 +1,4 @@
-@ Geologic Timescales
+# Geologic Timescales
 
 Contents
 | 
