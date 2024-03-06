@@ -6,7 +6,7 @@ Timescales can be divided into groups based on temporal coverage, spatial covera
 | -- | -- | -- | -- |
 | International Chronostratigraphic Chart | Global | All Earth's History | Chronostratigraphic |
 | Geochronologic Timescale (GTS2020) | Global | All Earth's History | Geochronologic |
-| Regional Timescales | Subcontinent, Country, to First Order Division | Varies | Chronostratigraphic Units |
+| Regional Timescales | Subcontinent, Country, to First Order Division | Varies | Chronostratigraphic |
 | Land Mammal Ages | Continent-level | Pleistocene | N/A |
   
 GTS2020 is the 'Gold Standard' for Timescales, a review activity that converges Chronostratigraphy, Magnetostratigraphy, Biostratigraphy, and Chemostratigraphy to produce a timescale in geochronologic units. See
