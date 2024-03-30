@@ -29,6 +29,8 @@ Timescales do not belong to traditional types of KOS resources. However, they pr
 | Namne | Scope | URL | Description |
 | -- | -- | -- | -- |
 | GeoWhen Database | Regional Timescales | https://timescalefoundation.org/resources/geowhen/regions.html | |
+| International Commission on Stratigraphy | Chronostratigraphic Timescale | https://stratigraphy.org/chart | Chronostratigraphic domain authority |
+
 
 ### Key Publications
 
