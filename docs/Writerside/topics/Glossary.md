@@ -1,5 +1,6 @@
-
-## Knowledge Organization Systems Term Glossary
+# Glossary
+The table belows contains a set of defined terms related to Knowledge Organization Systems.
+## KOS Term Glossary
 | Term | Definition | Source | Alt Terms |
 | -- | -- | -- | -- |
 | Authority File | A controlled vocabulary or official list that establishes, for consistency, the authoritative forms of headings and the preferred terms or proper names to be used when creating a catalog or when indexing and searching a set of entities within a defined domain. | [1] | name authority list |
@@ -24,37 +25,12 @@
 | Vocabulary | A set of words, either constituting a language or, more specifically, used to describe a particular domain of knowledge. | [1] |
 | Vocabulary Mapping | A mapping of correspondences between two vocabularies. For controlled vocabularies, such mappings may be expressed using SKOS (http://www.w3.org/2004/02/skos/). | [1] |
 
-****
-
-## Types of Knowledge Organization Systems
-The following table contains a modified version of the KOS Types Vocabulary as part of the Networked Knowledge Organization Systems Dublin Core Application Profile (NKOS AP)
-
-| Type | Definition | Source |
-| -- | -- | -- |
-| categorization scheme | loosely formed grouping scheme |  [5] |
-| classification scheme | schedule of concepts and pre-coordinated combinations of concepts, arranged by classification |  [3] |
-| glossary | a collection of textual glosses or of specialized terms with their meanings |  [3] |
-| list | a limited set of terms arranged as a simple alphabetical list or in some other logically evident way; containing no relationships of any kind |  [4] |
-| name authority list | controlled vocabulary for use in naming particular entities consistently |  [3] |
-| ontology | A formal model that represents knowledge for a specific domain. An ontology describes the types of things that exist (classes), the relationships between them (properties), and the logical ways those classes and properties can be used together (axioms). |  [6] |
-| semantic network | set of terms representing concepts, modeled as the nodes in a network of variable relationship types |  [6] |
-| subject heading scheme |  structured vocabulary comprising terms available for subject indexing, plus rules for combining them into pre-coordinated strings of terms where necessary |  [3] |
-| synonym ring | set of synonymous or almost synonymous terms, any of which can be used to refer to a particular concept |  [3] |
-| taxonomy | scheme of categories and subcategories that can be used to sort and otherwise organize items of knowledge or information |  [3] |
-| terminology | set of designations belonging to one special language [ISO 1087-1:2000, definition 3.5.1] | [3] |
-
 
 ## References
-### Key Publications
-Hodge, G. (2000). Systems of Knowledge Organization for Digital libraries. Beyond traditional authority files. Washington, DC: the Council on Library and Information Resources.   http://www.clir.org/pubs/reports/pub91/contents.html
-Zeng ML (2008) Knowledge Organization Systems. Knowl. Org. 35(2008)No.2/No.3  
-Tudhope D, Koch T, Heery R (2006) Terminology Services and TechnologyJISC state of the art review. http://www.ukoln.ac.uk/terminology/JISC-review2006.html  
-### Term Sources
-[1] http://www.sparontologies.net/ontologies/fabio  
-[2] NKOS definitions. Based on KOS Taxonomy [2]http://nkos.slis.kent.edu/KOS_taxonomy.htm  
+[1] http://www.sparontologies.net/ontologies/fabio    
+[2] NKOS definitions. Based on KOS Taxonomy http://nkos.slis.kent.edu/KOS_taxonomy.htm    
 [3] ISO25964-2:2013. Information and documentation -- Thesauri and interoperability with other vocabularies. Part 2: Interoperability with other vocabularies.   
 [4] Merriam Webster online. Available at: https://www.merriam-webster.com/  
 [5] NKOS definitions. Based on ANSI/NISO Z39.19-2005 (R2010). Guidelines for the construction, format, and management of monolingual controlled vocabularies. ISBN: 1-880124-65-3. Available at: https://www.niso.org/publications/ansiniso-z3919-2005-r2010  
 [6] W3C Linked Data Glossary. W3C Working Group Note 27 June 2013. Available at: https://www.w3.org/TR/2013/NOTE-ld-glossary-20130627/  
 [7] ISO/IEC 11179-3 Section 11.3.2.5  
-
