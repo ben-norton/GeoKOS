@@ -1,6 +1,7 @@
 # Master Glossary
 ### schema:DefinedTermSet
 
+| Term | Definition | Source |
 | -- | -- | -- |
 | Access Control| Protection of resources against unauthorized access; a process by which the use of resources is regulated according to a security policy and is permitted by only authorized system entities according to that policy.| [RFC 2828](#rfc_2828)|
 | Access Control| The ability to selectively control who can get at or manipulate information in, for example, a Web server.| [WW GLOSS](#ww_gloss)|
