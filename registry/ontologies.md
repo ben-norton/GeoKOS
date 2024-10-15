@@ -50,8 +50,8 @@
 | The Interconnected Data Dictionary Ontology | IDDO | https://rub-informatik-im-bauwesen.github.io/iddo | The interconnected data dictionary ontology maps the data model of the ISO 23386 for the describing, creating, and maintenance of properties in interconnected data dictionaries. |
 | The Lexicon Model for Ontologies | lemon | https://lemon-model.net/ | Lemon is a proposed model for modeling lexicon and machine-readable dictionaries and linked to the Semantic Web and the Linked Data cloud. |
 | The Linked Earth Instrument Ontology | | http://linked.earth/ontology/instrument/1.0.0/index-en.html | The Instrument Ontology defines the different types of instruments that can be used to measure in a paleo climate dataset. |
-| The Noria Ontology | NORIA | https://github.com/Orange-OpenSource/noria-ontology/tree/master | The NORIA-O project is a data model for IT networks, events and operations information. The ontology is developed using web technologies (e.g. RDF, OWL, SKOS) and is intended as a structure for realizing an IT Service Management (ITSM) Knowledge Graph (KG) for Anomaly Detection (AD) and Risk Management applications. The model has been developed in collaboration with operational teams, and in connection with third parties linked vocabularies. |
-| The Proxy Observation Type Ontology | | http://linked.earth/ontology/observation/1.0.0/index-en.html | The Proxy Observation Type Ontology defines different types of proxy observations that we can find in a paleo climate dataset. |
+| The Noria Ontology | NORIA | https://github.com/Orange-OpenSource/noria-ontology/tree/master | The NORIA-O project is a data model for IT networks, events and operations information. The ontology is developed using web technologies (e.g. RDF, OWL, SKOS) and is intended as a structure for realizing an IT Service Management (ITSM) Knowledge Graph (KG) for Anomaly Detection (AD) and Risk Management applications. The model has been developed in collaboration with operational teams and in connection with third-party linked vocabulary. |
+| The Proxy Observation Type Ontology | | http://linked.earth/ontology/observation/1.0.0/index-en.html | The Proxy Observation Type Ontology defines different types of proxy observations that we can find in a paleoclimate dataset. |
 | Uniform Project Ontology | UPonto  | uponto.link/ontology/?i=1 | UPonto is an open-source machine-readable graph data format to facilitate data exchange and project analytics for capital projects. |
 | VANN: A vocabulary for annotating vocabulary descriptions | vann | https://vocab.org/vann/ | A vocabulary for annotating descriptions of vocabularies with examples and usage notes |
 | Web Characterization Terminology & Definitions Sheet | wca |  https://www.w3.org/1999/05/WCA-terms/ |     |
@@ -59,12 +59,19 @@
 | OGC GeoSPARQL - A Geographic Query Language for RDF Data | geo | https://docs.ogc.org/is/22-047r1/22-047r1.html | GeoSPARQL contains a small spatial domain OWL ontology that allow literal representations of geometries to be associated with spatial features and for features to be associated with other features using spatial relations. |
 | Common Core Ontologies (Merged) | CCO | https://matportal.org/ontologies/CCO/?p=summary | All eleven of the Common Core mid-level ontologies, along with BFO and the subset of RO used in CCO, merged into one file. Provided for use-cases where one file representing a specific release of CCO that includes all content of its import dependencies is desirable to use over the set of individual files and imports. |
 | Geospatial Ontology | CCO | https://www.ontologyrepository.com/CommonCoreOntologies/Mid/GeospatialOntology | This ontology is designed to represent sites, spatial regions, and other entities, especially those that are located near the surface of Earth, as well as the relations that hold between them. |
+| S4AC | S4AC Vocabulary Specification 0.2 | https://ns.inria.fr/s4ac/v2/s4ac_v2.html | S4AC (Social Semantic SPARQL Security for Access Control) is a lightweight vocabulary to create fine-grained access control policies for Linked Data. The vocabulary aims to design and share security information specifying the access control conditions under which the data is accessible. |
+| ACL Ontology | ACL | https://www.w3.org/ns/auth/acl | Vocabulary originally implemented by the w3c and now part of the solid project |
+| Photo Access Control Ontology | PAC | http://dig.csail.mit.edu/2008/PAC/ontology/pac | The photo access control ontology is designed to describe things relevant to the photo access control project. |
+| Web Characterization Terminology & Definitions Sheet | WCA | https://www.w3.org/1999/05/WCA-terms/ |     |
+| Gi2MO Ontology Specification | https://www.gi2mo.org/ontology/ | The following specification is a formal description of metadata schema proposal that can be applied to data gathered in the so-called Idea Management Systems. The goal of the following section is to introduce both Semantic Web and Idea Management experts to the topic and goals of the ontology and provide the basic knowledge to comprehend the technical part of the specification. |
 
 # Resources and Documentation 
 | Title | URL | Description | 
 | -- | -- | -- |
 | Oracle Docs | https://docs.oracle.com/cd/E19830-01/819-4712/abloe/index.html | |
 | OGC Name Type Specification - definitions - part 1 – basic name | https://docs.ogc.org/pol/09-048r7.html#_3b19dee9-2086-4bc5-8fc1-d39ffbfbe02d | The mission of the OGC Naming Authority (OGC-NA) is to provide the means through which OGC resources such as OGC documents, namespaces and ontologies can be controlled and managed such that they can provide clear and well-defined names and definitions. In the terminology defined in ISO 19135, OGC-NA is the Control Body for the register of OGC Names. This document specifies a rule for constructing OGC names that may be used for identifying definitions, as well as rules for formally representing the meanings of the definitions. |
+| Digital Asset Management Glossary | https://damglossary.org |     |
+
 
 # Search Engines and Registries
 | Title | URL | Description |
