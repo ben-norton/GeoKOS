@@ -56,6 +56,9 @@
 | VANN: A vocabulary for annotating vocabulary descriptions | vann | https://vocab.org/vann/ | A vocabulary for annotating descriptions of vocabularies with examples and usage notes |
 | Web Characterization Terminology & Definitions Sheet | wca |  https://www.w3.org/1999/05/WCA-terms/ |     |
 | ifcOWL ontology (IFC4_ADD1) | ifc | https://pi.pauwel.be/evoc/ifc_W3ID/20151211/IFC4_ADD1/index.html | This ifcOWL ontology is automatically generated from the EXPRESS schema 'IFC4_ADD1' using the 'IFC-to-RDF' converter developed by Pieter Pauwels (pipauwel.pauwels@ugent.be), based on the earlier versions from Jyrki Oraskari (jyrki.oraskari@aalto.fi) and Davy Van Deursen (davy.vandeursen@ugent.be). |
+| OGC GeoSPARQL - A Geographic Query Language for RDF Data | geo | https://docs.ogc.org/is/22-047r1/22-047r1.html | GeoSPARQL contains a small spatial domain OWL ontology that allow literal representations of geometries to be associated with spatial features and for features to be associated with other features using spatial relations. |
+| Common Core Ontologies (Merged) | CCO | https://matportal.org/ontologies/CCO/?p=summary | All eleven of the Common Core mid-level ontologies, along with BFO and the subset of RO used in CCO, merged into one file. Provided for use-cases where one file representing a specific release of CCO that includes all content of its import dependencies is desirable to use over the set of individual files and imports. |
+| Geospatial Ontology | CCO | https://www.ontologyrepository.com/CommonCoreOntologies/Mid/GeospatialOntology | This ontology is designed to represent sites, spatial regions, and other entities, especially those that are located near the surface of Earth, as well as the relations that hold between them. |
 
 # Resources and Documentation 
 | Title | URL | Description | 
