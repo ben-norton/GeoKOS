@@ -29,7 +29,7 @@
 | Classification code | Encoded classification of an object represented by a graphical symbol that conforms to an encoding scheme, ideally, defined as part of the classification scheme | IEC 81714-2:2006 |
 | Classification Scheme | Schedule of concepts and pre-coordinated combinations of concepts, arranged by classification | [3] |
 | Classification Scheme | An arrangement or division of objects into groups based on characteristics that the objects have in common, e.g., origin, composition, structure, application, function, etc. Adds information not easily included in definitions, helps organize the registry and facilitates access to the registry |  |
-| Classification Scheme (alt) | A method of organization according to a set of pre-established principles, usually characterized by a notation system and a hierarchical structure of relationships among the entities. | [5] |
+| Classification Scheme | A method of organization according to a set of pre-established principles, usually characterized by a notation system and a hierarchical structure of relationships among the entities. | [5] |
 | Classification Scheme Item | A component of content in a Classification Scheme. This may be a node in a taxonomy or ontology or a term in a thesaurus, etc. |  |
 | Codelist | A type of controlled vocabulary that is comprised of a finite list of standard terms and meanings that represent the allowable values for a data item | Definition Source: NCI |
 | Column | Columns are a component of table-oriented databases that label and potentially define the type of each value stored in that column. | PRISMA |
@@ -52,10 +52,9 @@
 | Model | The core part of a Model-View-Controller or similar software architecture; the part that stores the data and runs the business rules or algorithms. | FOLDOC |
 | Narrower Term | A term that is subordinate to another term or to multiple terms in a hierarchy. In thesauri, the relationship indicator for this type of term is NT. | [5] |
 | Object | anything perceivable or conceivable | ISO 11179 |
-| Ontology | A formal model that allows knowledge to be represented for a specific domain. An ontology describes the types of things that exist (classes), the relationships between them (properties) and the logical ways those classes and properties can be used together (axioms). | [6] |
 | Ontology | A formal model that allows knowledge to be represented for a specific domain. An ontology describes the types of things that exist (classes), the relationships between them (properties) and the logical ways those classes and properties can be used together (axioms). | w3c Linked Data Glossary |
 | Permissible Value | Designation of a value meaning | ISO 11179 |
-| Policy based access control (PBAC) | A form of access control that uses an authorization policy that is flexible in the types of evaluated parameters (e.g., identity, role, clearance, operational need, risk, heuristics). | CNSSI 4009-2015 |
+| Policy-based access control (PBAC) | A form of access control that uses an authorization policy that is flexible in the types of evaluated parameters (e.g., identity, role, clearance, operational need, risk, heuristics). | CNSSI 4009-2015 |
 | Property | A property of an object type is a characteristic that informs a real-world entity or event. | Palantir Documentation |
 | Property | A quality common to all members of an object class | ISO 11179 |
 | Reference Document | Reference Document is a class each instance of which models a reference document that provides pertinent details for consultation about a subject. | ISO 11179 |
@@ -65,7 +64,6 @@
 | Role-based Access Control (RBAC) | Access control based on user roles (i.e., a collection of access authorizations a user receives based on an explicit or implicit assumption of a given role). Role permissions may be inherited through a role hierarchy and typically reflect the permissions needed to perform defined functions within an organization. A given role may apply to a single individual or to several individuals. | CNSSI 4009-2015 |
 | Table (Database) | n relational databases, a table is a database structure that defines different attributes in the form of columns and stores records with the associated column values in the form of rows. | PRISMA |
 | Taxonomy | A classification arranged in a hierarchical structure of classes and subclasses, showing parent-child isA relationships, or broader_than - narrower_than relationships. | [1] |
-| Term | Definition | Source |
 | Tree Structure | A controlled vocabulary display format in which the complete hierarchy of terms is shown. Each term is assigned a tree number or line number which leads from the alphabetical display to the hierarchical one. The hierarchical display is also known as systematic display | [5] |
 | Uncontrolled Vocabulary | A non-defined collection of words and phrases relating to a particular domain of knowledge, usually added freely by a community, in which homonyms, synonyms and similar ambiguities of meaning present in natural language are not formally disambiguated. | [1] |
 | Value Domain | Specified by a description or specification, such as a rule, a procedure, a range (i.e. interval), or by a set of permissible values |  |
