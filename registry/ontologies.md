@@ -37,7 +37,7 @@
 | Noria Ontology | NORIA | https://github.com/Orange-OpenSource/noria-ontology/tree/master | The NORIA-O project is a data model for IT networks, events and operations information. The ontology is developed using web technologies (e.g. RDF, OWL, SKOS) and is intended as a structure for realizing an IT Service Management (ITSM) Knowledge Graph (KG) for Anomaly Detection (AD) and Risk Management applications. The model has been developed in collaboration with operational teams and in connection with third-party linked vocabulary. |
 | OGC GeoSPARQL - A Geographic Query Language for RDF Data | geo | https://docs.ogc.org/is/22-047r1/22-047r1.html | GeoSPARQL contains a small spatial domain OWL ontology that allow literal representations of geometries to be associated with spatial features and for features to be associated with other features using spatial relations. |
 | Ontology of Core Data Mining Entities | ONTODM-CORE | https://bioportal.bioontology.org/ontologies/ONTODM-CORE/ | OntoDM is a generic ontology for the domain of data mining.  |
-| Open Contracting Data Standard | OCDS | https://github.com/ColinMaudry/open-contracting-ld | |
+| Open Contracting Data Standard | OCDS | https://github.com/ColinMaudry/open-contracting-ld | A data model that aims at structuring and publishing contracting data (tenders, procurements, awards, transactions, etc.) |
 | OpenLink CVs/Resumes Ontology | | http://www.openlinksw.com/c/8sq5Fh1N1r | |
 | OpenLink Ontology for Professional Network Profiles Description Document | | http://www.openlinksw.com/c/3bNycsKdD6 | |
 | Photo Access Control Ontology | PAC | http://dig.csail.mit.edu/2008/PAC/ontology/pac | The photo access control ontology is designed to describe things relevant to the photo access control project. |
