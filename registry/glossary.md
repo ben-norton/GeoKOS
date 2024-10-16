@@ -94,15 +94,17 @@
 * [Semantic Science Integrated Ontology]
 * [w3c Linked Data Glossary]
 * [Palantir Documentation]
-[1] http://www.sparontologies.net/ontologies/fabio
-[2] NKOS definitions. Based on KOS Taxonomy http://nkos.slis.kent.edu/KOS_taxonomy.htm
-[3] ISO25964-2:2013. Information and documentation -- Thesauri and interoperability with other vocabularies. Part 2: Interoperability with other vocabularies.
-[4] Merriam Webster online. Available at: https://www.merriam-webster.com/
-[5] NKOS definitions. Based on ANSI/NISO Z39.19-2005 (R2010). Guidelines for the construction, format, and management of monolingual controlled vocabularies. ISBN: 1-880124-65-3. Available at: https://www.niso.org/publications/ansiniso-z3919-2005-r2010
-[6] W3C Linked Data Glossary. W3C Working Group Note 27 June 2013. Available at: https://www.w3.org/TR/2013/NOTE-ld-glossary-20130627/
+  
+[1] http://www.sparontologies.net/ontologies/fabio  
+[2] NKOS definitions. Based on KOS Taxonomy http://nkos.slis.kent.edu/KOS_taxonomy.htm  
+[3] ISO25964-2:2013. Information and documentation -- Thesauri and interoperability with other vocabularies. Part 2: Interoperability with other vocabularies.  
+[4] Merriam Webster online. Available at: https://www.merriam-webster.com/  
+[5] NKOS definitions. Based on ANSI/NISO Z39.19-2005 (R2010). Guidelines for the construction, format, and management of monolingual controlled vocabularies. ISBN: 1-880124-65-3. Available at: https://www.niso.org/publications/ansiniso-z3919-2005-r2010  
+[6] W3C Linked Data Glossary. W3C Working Group Note 27 June 2013. Available at: https://www.w3.org/TR/2013/NOTE-ld-glossary-20130627/  
+
 ## Additional Resources
 | Name | URL | Type |
-| -- | -- |
+| -- | -- | -- |
 | | https://csrc.nist.gov/glossary | |
 | | https://spec.edmcouncil.org/idmp/ontology | |
 | Inist-CNRS Linked open terminology resources | https://skosmos.loterre.fr/en/ | Skosmos Instance |
