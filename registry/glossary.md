@@ -1,12 +1,13 @@
 # Master Glossary
 ### schema:DefinedTermSet
+The table below contains common terms in the KOS domain. Many terms have more than one definition and are therefore listed multiple times. This is intentional. Terms are used in different contexts for different purposes. Adopting a defined term for a particular purpose often requires combining several source definitions and then adjusting them accordingly. 
 
 | Term | Definition | Source |
 | -- | -- | -- |
 | Access Control | Protection of resources against unauthorized access; a process by which the use of resources is regulated according to a security policy and is permitted by only authorized system entities according to that policy. | RFC 2828 |
 | Access Control | The ability to selectively control who can get at or manipulate information in, for example, a Web server. | WW GLOSS |
 | Application Programming Interface (API) | An API (Application Programming Interface) is a set of features and rules that exist inside a software program (the application) enabling interaction with it through software - as opposed to a human user interface. The API can be seen as a simple contract (the interface) between the application offering it and other items, such as third-party software or hardware. | MSDN |
-| Architecture | The software architecture of a program or computing system is the structure or structures of the system. This structure includes software components, the externally visible properties of those components, the relationships among them, and the constraints on their use. | WSIA GLOSS |
+| Architecture | The software architecture of a program or computing system is the structure or structure of the system. This structure includes software components, the externally visible properties of those components, the relationships among them, and the constraints on their use. | WSIA GLOSS |
 | Attribute | A distinct characteristic of an object. An object's attributes are said to describe the object. Objects' attributes are often specified in terms of their physical traits, such as size, shape, weight, and color, etc., for real-world objects. Objects in cyberspace might have attributes describing size, type of encoding, network address, etc. | WSIA GLOSS |
 | Attribute | characteristic (3.2.4) of an object (3.2.1) or set of objects | ISO 11179 |
 | Attribute-based Access Control (ABAC) | Access control based on attributes associated with and about subjects, objects, targets, initiators, resources, or the environment. An access control rule set defines the combination of attributes under which access may take place. See also identity, credential, and access management (ICAM). | CNSSI 4009-2015 |
