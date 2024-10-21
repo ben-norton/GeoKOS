@@ -67,13 +67,3 @@
 | -- | -- | -- |
 | Oracle Docs | https://docs.oracle.com/cd/E19830-01/819-4712/abloe/index.html | |
 | OGC Name Type Specification - definitions - part 1 – basic name | https://docs.ogc.org/pol/09-048r7.html#_3b19dee9-2086-4bc5-8fc1-d39ffbfbe02d | The mission of the OGC Naming Authority (OGC-NA) is to provide the means through which OGC resources such as OGC documents, namespaces and ontologies can be controlled and managed such that they can provide clear and well-defined names and definitions. In the terminology defined in ISO 19135, OGC-NA is the Control Body for the register of OGC Names. This document specifies a rule for constructing OGC names that may be used for identifying definitions, as well as rules for formally representing the meanings of the definitions. |
-| Digital Asset Management Glossary | https://damglossary.org |     |
-
-
-# Search Engines and Registries
-| Title | URL | Description |
-| -- | -- | -- |
-| BioPortal | https://bioportal.bioontology.org/ | world's most comprehensive repository of biomedical ontologies |
-| Linked Open Vocabularies | https://lov.linkeddata.es/dataset/lov/ | |
-| Ontobee | https://ontobee.org/ | Ontobee: A linked data server designed for ontologies. Ontobee is aimed to facilitate ontology data sharing, visualization, query, integration, and analysis. |
-
