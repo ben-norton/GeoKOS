@@ -9,7 +9,7 @@
 | Australian Land Mammal Ages |  | Megirian D, Prideaux GJ, Murray PF, Smit N (2010) An Australian land mammal age biochronological scheme.  Paleobiology, 36(4):658-671. http://dx.doi.org/10.1666/09047.1 | en | thors:ReferenceSystem |
 | African Land Mammal Ages | AFRLMA | Van Couvering JA, Delson E (2020) African Land Mammal Ages. Journal of Vertebrate Paleontology e1803340. https://doi.org/10.1080/02724634.2020.1803340 | en | thors:ReferenceSystem |
 
-##Files
+## Files
 | dcterms:title | filename |
 | -- | -- |
 | North American Land Mammal Ages | nalma_land_mammal_ages.csv |
