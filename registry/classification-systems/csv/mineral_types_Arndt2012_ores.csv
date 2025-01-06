@@ -1,0 +1,5 @@
+﻿depth_temperature,depth,temperature_c,occurrence,metals
+Telethermal,Near Surface,±100,"In sedimentary rocks or lava flows; open fractures, cavities, joints. No replacement phenomena","Pb, Zn, Cd, Ge"
+Epithermal,Near Surface to 1.5 km,50-200,In sedimentary or igneous rocks; often in fault systems; simple veins or pipes and stockworks; little replacement phenomena,"Pb, Zn, Au, Ag, Hg, Sb, Cu, Se, Bi, U"
+Mesothermal,1.2-4.5 km,200-300,"Generally in or near intrusive igneous rocks; associated with regional faults; extensive replacement deposits or fracture fillings; tabular bodies, stockworks, pipes","Au, Ag, Cu, As, Pb, Zn, Ni, Co, W, Mo, U etc."
+Hypothermal,3-15 km,300-600,In or near deep-seated felsic plutonic rocks in deeply eroded areas. Fracture-filling and replacement bodies; tabular or irregular shape,"Au, Sn, Mo, W, Cu, Pb, Zn, As"

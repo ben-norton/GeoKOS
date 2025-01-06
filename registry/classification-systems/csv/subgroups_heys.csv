@@ -1,0 +1,218 @@
+﻿chemical_index_id,subgroup_name,group_id
+3,Sulphides etc. of the alkalis,3
+3.1,Sulphides etc. of Cu,3
+3.2,Sulphides etc. of Ag,3
+3.3,Sulphides etc. of Au,3
+3.4,"Sulphides etc. of Group II metals other than Hg (Mg, Ca, Zn, Cd)",3
+3.5,Sulphides etc. of Hg and Tl,3
+3.6,Sulphides etc. of Sb and Pb,3
+3.7,"Sulphides etc. of V, As, Sb and Bi",3
+3.8,"Sulphides etc. of Cr, Mo, W an Mn",3
+3.9,Sulphides etc. of Fe,3
+3.1,Sulphides etc. of Co,3
+3.11,Sulphides etc. of Ni,3
+3.12,Sulphides etc. of the platinum metals,3
+5,Sulpharsenites etc. of the alkali metals,5
+5.1,Sulpharsenites etc. of Cu,5
+5.2,Sulpharsenites etc. of Ag,5
+5.3,Sulpharsenites etc. of Au,5
+5.4,Sulpharsenites etc. of Zn and Hg,5
+5.5,Sulpharsenites etc. of Tl,5
+5.6,Sulpharsenites etc. of Pb alone,5
+5.7,Sulpharsenites etc. of Pb and other metals,5
+5.8,"Sulpharsenites etc. of Mn, Fe, Co and Ni",5
+6.1,Sulphostannates and other sulfides containing Sn,6
+6.2,Sulphogermanates,6
+6.3,Sulpharsenates and sulphantimonates,6
+6.4,Sulphovanadates,6
+6.5,Sulphohalides,6
+7.1,Oxides of hydrogen,7
+7.2,Oxides of the alkali metals,7
+7.3,Oxides of Cu,7
+7.4,"Oxides of Be, Mg and the alkaline earths",7
+7.5,"Oxides of Zn, Cd and Hg",7
+7.6,Oxides of Al,7
+7.7,Oxides of Group III metals other than Al,7
+7.8,Oxides of Si,7
+7.9,Oxides of Ti,7
+7.1,Oxides of Zr and Th,7
+7.11,Oxides of Sn and Pb,7
+7.12,"Oxides of V, Nb and Ta",7
+7.13,"Oxides of As, Sb and Bi",7
+7.14,Oxides of Cr,7
+7.15,Oxides of Mo and W,7
+7.16,Oxides of U,7
+7.17,Oxides of Se and Te,7
+7.18,Oxides of Mn,7
+7.19,Oxides of Mn and Fe,7
+7.2,Oxides of Fe,7
+7.21,Oxides of Co,7
+7.22,Oxides of Ni,7
+8.1,Halides of the alkali metals and ammonium,8
+8.2,Halides of Cu,8
+8.3,Halides of Ag,8
+8.4,Halides of the alkaline earths and Mg,8
+8.5,Halides of Zn and Hg,8
+8.6,Halides of Al,8
+8.7,Halides of the rare earth metals,8
+8.8,Halides of Pb,8
+8.9,Halides of Sb and Bi,8
+8.1,Halides of Mn,8
+8.11,Halides of Fe and Ni,8
+8.12,Fluorborates (BF'<sub>4</sub>) and fluosilicates (SiF''<sub>6</sub>),8
+9.1,Borates of the alkalis and boric acid,9
+9.2,Borates of Be and Mg,9
+9.3,Borates of Ca and Sr,9
+9.4,Borates of Ca and Mn,9
+9.5,Borates of Al and rare earths,9
+9.6,"Borates of Ti, Sn and Ta",9
+9.7,Borates of Mn,9
+9.8,Borates of Fe,9
+9.9,Borates of Ni,9
+10.1,Borates with halide,10
+10.2,Borates with phosphate or arsenate,10
+10.3,Borates with sulphate,10
+10.4,Borates with carbonate,10
+11.1,Carbonates of the alkali metals and ammonium,11
+11.2,Carbonates of Cu,11
+11.3,Carbonates of Mg,11
+11.4,Carbonates of Ca,11
+11.5,Carbonates of Sr and Ba,11
+11.6,Carbonates of Zn and Cd,11
+11.7,Carbonates of Al,11
+11.8,Carbonates of the rare earths,11
+11.9,"Carbonates of Pb, Zr and Th",11
+11.1,Carbonates of Bi,11
+11.11,Carbonates of Cr and U,11
+11.12,Carbonates of Mn,11
+11.13,Carbonates of Fe,11
+11.14,Carbonates of Co and Ni,11
+12.1,Carbonates with halides,12
+12.2,Carbonates with sulphate,12
+14.1,Silicates of the alkali metals,14
+14.2,Silicates of Cu,14
+14.3,Silicates of Be,14
+14.4,Silicates of Mg,14
+14.5,Silicates of Ca,14
+14.6,Silicates of Ca with alkali or Mg or both,14
+14.7,"Silicates of Ba, Sr and Zn",14
+14.8,Silicates of Group III metals other than Al,14
+14.9,Silicates of Ti,14
+14.1,Silicates of Zr or Hf,14
+14.11,Silicates of Th and Hg,14
+14.12,Silicates of Sn,14
+14.13,Silicates of Pb,14
+14.14,Silicates of V and Bi,14
+14.15,Silicates of Cr,14
+14.16,Silicates of U,14
+14.17,Silicates of Mn,14
+14.18,"Silicates of Mn and Na, K, Mg, Ca or Fe",14
+14.19,Silicates of Fe,14
+14.2,Silicates of Fe and alkali metals,14
+14.21,Silicates of Fe and Mg,14
+14.22,Silicates of Fe and Ca,14
+14.23,"Silicates of Fe, Mg, Ca",14
+14.24,"Silicates of Fe, Mg and alkalis",14
+14.25,"Silicates of Fe, Ca and alkalis and of Fe, Mg, Ca and alkalis",14
+14.26,Silicates of Ni,14
+16.1,Aluminosilicates of Li,16
+16.2,Aluminosilicates of Na,16
+16.3,Aluminosilicates of K,16
+16.4,Aluminosilicates of Na and K,16
+16.5,"Aluminosilicates of Cs, NH<sub>4</sub> and Cu",16
+16.6,Aluminosilicates of Be,16
+16.7,Aluminosilicates of Mg,16
+16.8,Aluminosilicates of Mg and alkalis,16
+16.9,Aluminosilicates of Ca,16
+16.1,Aluminosilicates of Ca and alkalis,16
+16.11,Aluminosilicates of Ca and Mg with or without alkalis,16
+16.12,"Aluminosilicates of Sr, Ba and Zn",16
+16.13,Aluminosilicates of the rare earths,16
+16.14,"Aluminosilicates of Ti, Zr, Sn and Pb",16
+16.15,Aluminosilicates of V and Cr,16
+16.16,Aluminosilicates of Mn,16
+16.17,Aluminosilicates of Fe,16
+16.18,Aluminosilicates of Fe and alkalis,16
+16.19,Aluminosilicates of Fe and Mg,16
+16.2,"Aluminosilicates of Fe, Mg and alkalis",16
+16.21,Aluminosilicates of Fe and Ca,16
+16.22,"Aluminosilicates of Fe, Ca and alkalis",16
+16.23,"Aluminosilicates of Fe, Ca, and Mg",16
+16.24,"Aluminosilicates of Fe, Mg, Ca and alkalis",16
+16.25,Aluminosilicates of Ni,16
+17.1,Silicates with fluoride (not containing Al),17
+17.2,Silicates with fluoride,17
+17.3,Silicates with chloride (including aluminosilicates),17
+17.4,Silicates with carbonates,17
+17.5,Borosilicates,17
+17.6,Silicates with phosphate,17
+17.7,"Silicates with vanadate, arsenate or antimonate",17
+17.8,Silicates with niobate or tantalate,17
+17.9,Silicates with sulphide or sulphite,17
+17.1,"Silicates with sulphate, molybdate or tungstate",17
+18.1,Niobates and tantalates containing neither rare earths nor U,18
+18.2,Niobates and tantalates containing rare earths but not U,18
+18.3,Niobates and tantalates containing U but not rare earths,18
+18.4,Niobates and tantalates containing both U and rare earths,18
+19.1,Phosphates of the alkali metals,19
+19.2,Phosphates of Cu,19
+19.3,Phosphates of Be and Mg,19
+19.4,Phosphates of Ca,19
+19.5,Phosphates of Sr and Ba,19
+19.6,Phosphates of Zn,19
+19.7,Phosphates of Al alone,19
+19.8,Phosphates of Al and other metals,19
+19.9,Phosphates of rare earths and Sc,19
+19.1,"Phosphates of Pb, Th, V and Bi",19
+19.11,Phosphates of U,19
+19.12,Phosphates of Mn,19
+19.13,Phosphates of Fe alone,19
+19.14,Phosphates of Fe and other metals,19
+19.15,Phosphates of Ni,19
+20.1,Arsenates of Cu,20
+20.2,"Arsenates of Be, Mg, Ca or Ba",20
+20.3,"Arsenates of Zn, Cd or Hg",20
+20.4,"Arsenates of Group III metals (Al, rare earths)",20
+20.5,Arsenates of Ti and Pb,20
+20.6,Arsenates of Bi,20
+20.7,Arsenates of U,20
+20.8,Arsenates of Mn,20
+20.9,Arsenates of Fe,20
+20.1,Arsenates of Co and Ni,20
+21.1,Vanadates of the alkalis and Cu,21
+21.2,"Vanadates of Mg, Ca, Sr or Ba",21
+21.3,"Vanadates of Al, rare earths, Pb, V or Bi",21
+21.4,"Vanadates of U, Mn, Fe or Ni",21
+22.1,"Phosphates, arsenates or vanadates with fluoride",22
+22.2,"Phosphates, arsenates or vanadates with chloride",22
+22.3,"Phosphates, arsenates or vanadates with sulphates",22
+22.4,"Phosphates, arsenates or vanadates with carbonate",22
+22.5,"Phosphates, arsenates or vanadates with chromate, molybdate, niobate or tantalate",22
+24.1,"Antimonates and antimonites of Na, Cu or Ag",24
+24.2,"Antimonates of Be, Mg, Ca, Zn or Hg",24
+24.3,Antimonates of Ti and Pb,24
+24.4,Antimonates and antimonites of Mn and Fe,24
+25.1,Sulphates of the alkali metals and ammonium,25
+25.2,Sulphates of Cu and Ag,25
+25.3,Sulphates of Mg,25
+25.4,"Sulphates of Ca, Sr and Ba",25
+25.5,Sulphates of Zn and Hg,25
+25.6,Sulphates of Al and Tl,25
+25.7,Sulphates of Pb,25
+25.8,"Sulphates of Sb, V, Cr and U",25
+25.9,Sulphates of Mn,25
+25.1,Sulphates of Fe alone,25
+25.11,Sulphates of Fe and other metals,25
+25.12,Sulphates of Co and Ni,25
+27.1,Sulphites,27
+27.2,Chromates,27
+27.3,Molybdates,27
+27.4,Tungstates,27
+28.1,Selenites,28
+28.2,Selenates,28
+28.3,Tellurites,28
+28.4,Tellurates,28
+31.1,Oxalates,31
+31.2,Citrates,31
+31.3,Mellitates,31
+31.4,Acetates,31

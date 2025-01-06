@@ -1,0 +1,42 @@
+﻿class,element,mineral,composition
+Ferrous metals,Iron (Fe),Hematite,Fe2O3
+Ferrous metals,Iron (Fe),"Limonite, goethite",FeO·OH
+Ferrous metals,Iron (Fe),Magnetite,Fe3O4
+Ferrous metals,Manganese (Mn),Pyrolusite,MnO2
+Ferrous metals,Chromium (Cr),Chromite,FeCr2O4
+Ferrous metals,Nickel (Ni),Pentlandite,"(Fe, Ni)9S8"
+Ferrous metals,Nickel (Ni),Garnierite,"(Ni, Mg)3Si2O5(OH)4"
+Ferrous metals,Molybdenum (Mo),Molybdenite,MoS2
+Ferrous metals,Vanadium (V),Magnetite,"(Fe, V)3O4"
+Aluminium,Aluminium (Al),Gibbsite,Al(OH)3
+Base metals,Copper (Cu),Chalcopyrite,CuFeS2
+Base metals,Copper (Cu),Chalcocite,Cu2S
+Base metals,Copper (Cu),Cuprite,Cu2O
+Base metals,Copper (Cu),Tetrahedrite,"(Cu, Ag)12Sb4 S13"
+Base metals,Copper (Cu),Malachite,Cu2CO3(OH)2
+Base metals,Copper (Cu),Azurite,Cu3(CO3)2(OH)2
+Base metals,Copper (Cu),Native copper,Cu
+Base metals,Zinc (Zn),Sphalerite,"(Zn, Fe)S"
+Base metals,Lead (Pb),Galena,PbS
+Base metals,Tin (Sn),Cassiterite,SnO2
+Precious metals,Gold (Au),Native gold,Au
+Precious metals,Platinum (Pt),Alloys of platinum group elements (PGE),"Pt, Pd, Os, Ir …"
+Precious metals,Silver (Ag),Native silver Argentite,Ag (Ag2S)
+Energy sources,Uranium (U),Pitchblende,UO2
+Energy sources,Coal (C),Coal,C
+High-technology metals,Titanium (Ti),Ilmenite Rutile,FeTiO3 TiO2
+High-technology metals,Zirconium (Zr),Zircon,ZiSiO4
+High-technology metals,"Niobium (Nb), thorium (Th), rare earth elements","Monazite, apatite and rare minerals (bastnäsite, pollusite, etc.)","Nb, Th, La, Ce, Nd …"
+Other elements,Barium (Ba),Barite,BaSO4
+Other elements,Fluorine (F),Fluorite,CaF2
+Other elements,Potassium (K),Sylvite,KCl
+Minerals,,Diamond,C
+Minerals,,Corundum,Al2O3
+Minerals,,Garnet,"Silicate of Al, Mg, Fe"
+Minerals,,Talc,Mg3Si4O8(OH)2
+Minerals,,Mica,Phyllosilicate
+Minerals,,Diatomite,Silica
+Minerals,,"Andalusite, kyanite",Al2SiO5
+Minerals,,Albite,NaAlSi3O8
+Minerals,,Halite,NaCl
+Minerals,,Calcite,CaCO3

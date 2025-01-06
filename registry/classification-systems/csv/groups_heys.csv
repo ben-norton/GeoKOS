@@ -1,0 +1,33 @@
+﻿chemical_index_id,primary_group_name
+1,"Elements and Alloys (including the arsenides, antimonides and bismuthides of Cu, Ag and Au)"
+2,"Carbides, Nitrides, Silicides and Phosphides"
+4,Oxysulphides
+5,"Sulphosalts - Sulpharsenites and Sulphobismuthites (those containing Sn, Ge,or V are in Section 6)"
+3,"Sulphides, Selenides, Tellurides, Arsenides and Bismuthides (except the arsenides, antimonides and bismuthides of Cu, Ag and Au, which are included in Section 1)"
+6,"Sulphosalts - Sulphostannates, Sulphogermanates,Sulpharsenates, Sulphantimonates, Sulphovanadates and Sulphohalides"
+7,Oxides and Hydroxides
+8,"Halides - Fluorides, Chlorides, Bromides and Iodides; also Fluoborates and Fluosilicates"
+9,Borates
+10,Borates with other anions
+11,Carbonates
+12,Carbonates with other anions
+13,Nitrates
+14,Silicates not Containing Aluminum
+15,Silicates of Aluminum
+16,Silicates Containing Aluminum and other Metals
+17,Silicates Containing other Anions
+18,Niobates and Tantalates
+19,Phosphates
+20,"Arsenates (also arsenates with phosphate, but without other anions)"
+21,Vanadates (and vanadates with arsenate or phosphate)
+22,"Phosphates, Arsenates or Vanadates with other Anions"
+23,Arsenites
+24,Antimonates and Antimonites
+25,Sulphates
+26,Sulphates with Halide
+27,"Sulphites, Chromates, Molybdates and Tungstates"
+28,"Selenites, Selenates, Tellurites, and Tellurates"
+29,Iodates
+30,Thiocyanates
+31,"Oxalates, Citrates, Mellitates and Acetates"
+32,"Hydrocarbons, Resins and other Organic Compounds"
