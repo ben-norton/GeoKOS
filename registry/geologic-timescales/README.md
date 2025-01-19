@@ -1,7 +1,8 @@
 # Geologic Timescales
 Timescales are not readily identified as KOS Types, but are essential for the entire Geosciences Domain. The following contains a list of significant geologic timescales, including the type, units, source, and whether or not a copy is currently available in the GeoKOS Registry.
 
-Timescales can be divided into groups based on temporal coverage, spatial coverage, and timescale units.
+Timescales can be divided into groups based on temporal coverage, spatial coverage, and timescale units. 
+
 | Group Name | Spatial Coverage | Temporal Coverage | Units |
 | -- | -- | -- | -- |
 | International Chronostratigraphic Chart | Global | All Earth's History | Chronostratigraphic |

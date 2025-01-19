@@ -1,0 +1,5 @@
+* [Home](/)
+* [Resource Inventory](/inventory)
+* [Glossary](/registry/glossary.md)
+* [Glossary](/registry/ontology.md)
+* [Resources](/registry/resourcesy.md)
