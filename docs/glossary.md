@@ -1,6 +1,9 @@
-# Linked Data and Information Technology Glossary
+# Linked Data and Information Technology Synthesis 
 
-The following table contains terms in the information technology domain, primarily associated with web applications and linked data. Several terms have multiple definitions to facilitate vocabulary synthesis activities, where a collection of existing definitions is aggregated and assessed for applicability to a specific project. See [Ontologies](https://github.com/ben-norton/GeoKOS/blob/main/registry/ontologies.md) and [Resources](https://github.com/ben-norton/GeoKOS/blob/main/registry/resources.md) for referenced sources.  
+The following table contains defined terms in the information technology domain, primarily associated with web 
+applications and linked data. Several terms have multiple definitions to facilitate vocabulary synthesis 
+activities, where a collection of existing definitions is aggregated and assessed for applicability to a 
+specific project. See [Ontologies](ontologies.md) and [Resources](resources.md) for referenced sources.  
 Last Updated: 20241218
 
 | Term                                    | Definition                                                                                                                                                                                                                                                                                                                                                                                          | Source                                                                                                       |

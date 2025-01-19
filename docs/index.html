@@ -6,21 +6,42 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+<!--   <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"> -->
+
+  <style>
+    :root {
+      --content-max-width: 100em;
+       --sidebar-menu-link-border-color              : #1469FF;
+    --sidebar-menu-link-border-color--active         : #1469FF;
+    --sidebar-menu-link-border-color--hover          : #1469FF;
+      --sidebar-menu-link-border-width: 4px;
+
+    }
+    areticle#main {
+      width: 100%;
+    }
+
+  </style>
 </head>
 <body>
   <div id="app"></div>
   <script>
     window.$docsify = {
       name: 'GeoKOS',
-      repo: 'https://github.com/ben-norton/GeoKOS'
+      themeColor: '#052D74',
+      repo: 'https://github.com/ben-norton/GeoKOS',
       loadSidebar: true,
-      alias: {
-        '/.*/_sidebar.md': '/_sidebar.md'
+      loadNavbar: true,
+      themeable: {
+          readyTransition : true, // default
+          responsiveTables: true  // default
       }
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
 </body>
 </html>

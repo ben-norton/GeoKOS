@@ -1,15 +1,14 @@
 # GeoKOS Registry
 GeoKOS is a registry of KOS Resources and supports utilities in the natural history museum collections domain. The name *Geo*KOS refers to the original scope in the geosciences domain. Since its inception, GeoKOS has been extended across the collections community.
 
-## Key Terms
-### Knowledge Organization Systems
+## Knowledge Organization Systems
 Knowledge Organization Systems (KOS) encompass all types of schemes for organizing information and promoting knowledge management, such as classification schemes, gazetteers, lexical databases, taxonomies, thesauri, and ontologies. They are designed to facilitate the management and retrieval of information.   
 Hodge (2000)
 
 A Knowledge Organization System provides a framework or schema for storing and organizing data, information, and knowledge about the world and thoughts for a variety of purposes, including understanding, retrieval, discovery, and, ultimately, reasoning.  
 Soergel D (2009)
 
-### Types of Knowledge Organization Systems
+## Types of Knowledge Organization Systems
 Several published reviews of KOS resources have proposed categorization schemes. These include the Classification Scheme, Dictionary, Name AUthority List, Ontology, Synonym Ring, Taxonomy, Thesaurus, and Controlled Vocabulary. Please see the references below for more information.
 Hodge (2000), ISO 25964, NKOS Types Vocabulary, Souza et al (2012), and Zeng ML (2008)
 
