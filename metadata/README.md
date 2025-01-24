@@ -3,7 +3,7 @@
 - Created: 2025-01-19  
 
 The tables below provide a tabulated summary of the metadata schemes associated with GeoKOS. After an exhaustive inventory of KOS resource metadata schemes, two new schemes were created
-as part of this project specifically to describe classification systems and controlled vocabularies. Both schemes should be considered in active developed. The terms are heavily based 
+as part of this project specifically to describe classification systems and controlled vocabularies in the geosciences and collections domains. Both schemes should be considered in active development. The terms are heavily based 
 on existing schemes, but curtailed to meet the specific needs of KOS resources in the bioinformatics and geoinformatics domains. 
 
 Links to the latest iteration of both schemes are provided below. 
