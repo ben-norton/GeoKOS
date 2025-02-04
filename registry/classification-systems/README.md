@@ -3,7 +3,7 @@
 ## Index
 Index of classification systems stored in the GeoKOS registry 
 | Name | Folder |
-| -- | -- | -- |
+| -- | -- |
 | Geochemical Classification for Feldspathic Igneous Rocks | [feldspathic-igneous-frost2008](/feldspathic-igneous-frost2008) |
 | Geochemical Classification of Granitic Rocks | [granitic-rocks-frost2001](/granitic-rocks-frost2001) |
 | Hey's Mineral Index | [heys-mineral-index-1993](/heys-mineral-index-1993) |
