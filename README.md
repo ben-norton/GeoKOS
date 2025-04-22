@@ -1,4 +1,5 @@
 # GeoKOS Registry
+GeoKOS Website: [https://ben-norton.github.io/GeoKOS/#/](https://ben-norton.github.io/GeoKOS/#/)  
 GeoKOS is a registry of KOS Resources and supports utilities in the natural history museum collections domain. The name *Geo*KOS refers to the original scope in the geosciences domain. Since its inception, GeoKOS has been extended across the collections community.
 
 ## Key Terms
