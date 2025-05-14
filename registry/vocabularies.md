@@ -1,6 +1,5 @@
 Vocabularies
-The Google Sheets workbooks below contain collections of controlled vocabularies organized into thematic groups. The workbooks should be considered 'works in progress' unless denoted otherwise in the status column. ONce finalized
-with complete attribution metadata and content, individual vocabularies are copied into standardized csv files.
+The Google Sheets workbooks below contain collections of controlled vocabularies organized into thematic groups. The workbooks should be considered 'works in progress' unless denoted otherwise in the status column. Once finalized with complete attribution metadata and content, individual vocabularies are copied into standardized CSV files.
 
 | Title | URL | Category | Status |
 | -- | -- | -- | -- |
