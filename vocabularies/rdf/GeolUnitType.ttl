@@ -1,0 +1,789 @@
+@prefix schema: <https://schema.org/> .
+@prefix ssd:   <http://www.w3.org/ns/sparql-service-description#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix qb:    <http://purl.org/linked-data/cube#> .
+@prefix dgu:   <http://reference.data.gov.uk/def/reference/> .
+@prefix ui:    <http://purl.org/linked-data/registry-ui#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix reg:   <http://purl.org/linked-data/registry#> .
+@prefix api:   <http://purl.org/linked-data/api/vocab#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix odrs:  <http://schema.theodi.org/odrs#> .
+@prefix env-ui: <http://environment.data.gov.uk/registry/structure/ui/> .
+@prefix version: <http://purl.org/linked-data/version#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ldp:   <http://www.w3.org/ns/ldp#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix vs:    <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/_19>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Pédoderme"@fr , "Pedoderm"@en ;
+        dct:dateAccepted   "2020-04-08T12:25:29.938Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2020-04-08T12:25:14.78Z"^^xsd:dateTime ;
+        dct:description    "Unité géologique définie en fonction du développement et du caractère du sol. Le pédoderme n'est pas une unité de classification de surface car la classification du sol nécessite la connaissance du profil du sol, qui s'étend toujours à une certaine distance sous la surface."@fr , "Geologic unit defined based on soil development and character. Pedoderm is not a surface classification unit because soil classification requires knowledge of the soil profile, which always extends some distance beneath the surface."@en ;
+        dct:modified       "2022-12-07T15:15:29.292Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/GeolUnitType/19> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/GeolUnitType/_19:4#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       19 ;
+        reg:register       <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    5 .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/_2>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Lithogenetic Unit"@en , "Unité lithogénétique"@fr ;
+        dct:dateAccepted   "2020-04-08T12:25:29.761Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2020-04-08T12:25:14.922Z"^^xsd:dateTime ;
+        dct:description    "Geologic unit defined by genesis. The genesis is manifested by material properties, but the material is not the defining property. Example-- alluvial deposits, glacial deposits."@en , "Unité géologique définie par sa genèse. La genèse se manifeste par les propriétés physiques, mais le matériau n’est pas la propriété déterminante."@fr ;
+        dct:modified       "2022-12-07T15:15:29.284Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/GeolUnitType/2> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/GeolUnitType/_2:4#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       2 ;
+        reg:register       <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    5 .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/11>
+        a                skos:Concept ;
+        rdfs:label       "Artificial Ground"@en , "Sol artificiel"@fr ;
+        dct:description  "Geologic unit defined by genesis involving direct human action to deposit or modify material."@en , "Unité géologique définie par une genèse faisant intervenir une action directe de l’homme consistant à déposer ou à modifier un matériau."@fr ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:broader     <https://data.geoscience.fr/ncl/GeolUnitType/2> ;
+        skos:exactMatch  <http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/artificialGround> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        skos:notation    "11" ;
+        skos:prefLabel   "Sol artificiel"@fr , "Artificial Ground"@en ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> ;
+        <https://data.geoscience.fr/def/main#nature>
+                <https://data.geoscience.fr/ncl/natelem/1> .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/_13>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Unité résultant d'un glissement de terrain"@fr , "Mass Movement Unit"@en ;
+        dct:dateAccepted   "2020-04-08T12:25:29.887Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2020-04-08T12:25:14.767Z"^^xsd:dateTime ;
+        dct:description    "Unité géologique produite par un déplacement de matériau par gravité, vers le bas d'une pente, et caractérisé par un type de mouvement entraînant le dépôt, ainsi que par les rapports que les différents types de mouvements présents dans le dépôt entretiennent dans le temps et dans l’espace."@fr , "Geologic unit produced by gravity driven, down-slope displacemnt of material, and characterized by the type of movement giving rise to the deposit, and by how the individual movement types present in the deposit are related in time and space."@en ;
+        dct:modified       "2022-12-07T15:15:29.281Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/GeolUnitType/13> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/GeolUnitType/_13:4#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       13 ;
+        reg:register       <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    5 .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/5>
+        a                  skos:Concept ;
+        rdfs:label         "Lithotectonic Unit"@en , "Unité lithotectonique"@fr ;
+        dct:description    "Geologic unit defined defined on basis of structural or deformation features, mutual relations, origin or historical evolution. Contained material may be igneous, sedimentary, or metamorphic."@en , "Unité géologique définie sur la base de ses caractéristiques structurales ou de déformation, de relations mutuelles, de son origine ou de son évolution historique. Les matériaux qu'elle contient peuvent être ignés, sédimentaires ou métamorphiques."@fr ;
+        reg:category       <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:exactMatch    <http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/lithotectonicUnit> ;
+        skos:inScheme      <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        skos:narrower      <https://data.geoscience.fr/ncl/GeolUnitType/10> ;
+        skos:notation      "5" ;
+        skos:prefLabel     "Lithotectonic Unit"@en , "Unité lithotectonique"@fr ;
+        skos:topConceptOf  <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        adms:status        <http://inspire.ec.europa.eu/registry/status/valid> ;
+        <https://data.geoscience.fr/def/main#nature>
+                <https://data.geoscience.fr/ncl/natelem/1> .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/_20>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Unité géomorphologique"@fr , "Geomorphologic Unit"@en ;
+        dct:dateAccepted   "2020-04-08T12:25:29.946Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2020-04-08T12:25:14.81Z"^^xsd:dateTime ;
+        dct:description    "Unité géologique définie par le relief de la surface, par ex. moraine bosselée"@fr , "Geologic unit defined by surface landform, e.g. hummocky moraine"@en ;
+        dct:modified       "2022-12-07T15:15:29.26Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/GeolUnitType/20> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/GeolUnitType/_20:4#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       20 ;
+        reg:register       <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    5 .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/_7>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Pedostratigraphic Unit"@en , "Unité pédostratigraphique"@fr ;
+        dct:dateAccepted   "2020-04-08T12:25:29.83Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2020-04-08T12:25:14.87Z"^^xsd:dateTime ;
+        dct:description    "Unité géologique qui représente un seul horizon pédologique dans une séquence de strates (consolidées ou non). La présence d'une unité géologique sus-jacente est requise, mais localement, l'horizon du sol peut être à la surface de la Terre (auquel cas il peut coïncider avec un pédoderme)."@fr , "Geologic unit that represents a single pedologic horizon in a sequence of strata (consolidated or non-consolidated). The presence of an overlying geologic unit is required, but locally the soil horizon may be at the Earth surface (in which case is may be coincident with a Pedoderm). See discussion at <https://www.seegrid.csiro.au/twiki/bin/view/CGIModel/PedostratigraphicUnit>"@en ;
+        dct:modified       "2022-12-07T15:15:29.274Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/GeolUnitType/7> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/GeolUnitType/_7:4#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       7 ;
+        reg:register       <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    5 .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/16>
+        a                  skos:Concept ;
+        rdfs:label         "Unité chronostratigraphique"@fr , "Chronostratigraphic Unit"@en ;
+        dct:description    "Geologic unit that includes all rocks formed during a specific interval of geologic time"@en , "Unité géologique comprenant toutes les roches formées durant un intervalle de temps géologique spécifique."@fr ;
+        reg:category       <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:exactMatch    <http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/chronostratigraphicUnit> ;
+        skos:inScheme      <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        skos:notation      "16" ;
+        skos:prefLabel     "Unité chronostratigraphique"@fr , "Chronostratigraphic Unit"@en ;
+        skos:topConceptOf  <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        adms:status        <http://inspire.ec.europa.eu/registry/status/valid> ;
+        <https://data.geoscience.fr/def/main#nature>
+                <https://data.geoscience.fr/ncl/natelem/1> .
+
+<https://data.geoscience.fr/ncl/_GeolUnitType>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Geologic Units types"@en , "Unités géologiques"@fr ;
+        dct:dateAccepted   "2020-04-08T12:25:25.958Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2020-04-08T12:25:14.74Z"^^xsd:dateTime ;
+        dct:description    "Ce registre recense l'ensemble unités géologiques."@fr , "This register lists all the geologic units."@en ;
+        dct:modified       "2024-11-21T08:14:07.302Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity         <https://data.geoscience.fr/ncl/GeolUnitType> ;
+                             reg:entityVersion  <https://data.geoscience.fr/ncl/GeolUnitType:2>
+                           ] ;
+        reg:itemClass      reg:Register , ldp:Container , skos:ConceptScheme ;
+        reg:notation       "GeolUnitType" ;
+        reg:register       <https://data.geoscience.fr/ncl/> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/_18>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Polarity Chronostratigraphic Unit"@en , "Unité à polarité chronostratigraphique"@fr ;
+        dct:dateAccepted   "2020-04-08T12:25:29.931Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2020-04-08T12:25:14.878Z"^^xsd:dateTime ;
+        dct:description    "Geologic unit defined by primary magnetic-polarity record imposed whien the rock was deposited or crystallized during a specific interval of geolgoic time. Kind of chronostratigraphic unit and kind of geophysical unit."@en , "Unité géologique définie par un enregistrement de polarité magnétique primaire imposé au moment où la roche s’est déposée ou cristallisée durant un intervalle spécifique de temps géologique."@fr ;
+        dct:modified       "2022-12-07T15:15:29.263Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/GeolUnitType/18> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/GeolUnitType/_18:4#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       18 ;
+        reg:register       <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    5 .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/10>
+        a                skos:Concept ;
+        rdfs:label       "Deformation Unit"@en , "Unité de déformation"@fr ;
+        dct:description  "Unité lithotectonique définie par son style de déformation ou sa structure géologique caractéristique, observable à l'affleurement"@fr , "Lithotectonic unit defined by deformation style or characteristic geologic structure observable in outcrop."@en ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:broader     <https://data.geoscience.fr/ncl/GeolUnitType/5> ;
+        skos:exactMatch  <http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/deformationUnit> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        skos:notation    "10" ;
+        skos:prefLabel   "Unité de déformation"@fr , "Deformation Unit"@en ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> ;
+        <https://data.geoscience.fr/def/main#nature>
+                <https://data.geoscience.fr/ncl/natelem/1> .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/_1>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Unité lithodémique"@fr , "Lithodemic Unit"@en ;
+        dct:dateAccepted   "2020-04-08T12:25:29.745Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2020-04-08T12:25:14.828Z"^^xsd:dateTime ;
+        dct:description    "Unité lithostratigraphique dépourvue de stratification."@fr , "Lithostratigraphic unit that lacks stratification"@en ;
+        dct:modified       "2022-12-07T15:15:29.261Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/GeolUnitType/1> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/GeolUnitType/_1:4#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       1 ;
+        reg:register       <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    5 .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/23>
+        a                  skos:Concept ;
+        rdfs:label         "Unité hydrogéologique"@fr , "Hydrogeological Unit"@en ;
+        dct:description    "Geological unit, aquifer or non-aquifer, corresponding to a physical system characterized with regard to its state and its hydrogeological characteristics"@en , "Unité géologique, aquifère ou non aquifère, correspondant à un système physique caractérisé au regard de son état et de ses caractéristiques hydrogéologiques."@fr ;
+        reg:category       <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme      <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        skos:notation      "23" ;
+        skos:prefLabel     "Unité hydrogéologique"@fr , "Hydrogeological Unit"@en ;
+        skos:topConceptOf  <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        adms:status        <http://inspire.ec.europa.eu/registry/status/submitted> ;
+        <https://data.geoscience.fr/def/main#nature>
+                <https://data.geoscience.fr/ncl/natelem/1> .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/_12>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Unité d'excavation"@fr , "Excavation Unit"@en ;
+        dct:dateAccepted   "2020-04-08T12:25:29.877Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2020-04-08T12:25:14.79Z"^^xsd:dateTime ;
+        dct:description    "Unité géologique définie par une genèse anthropique faisant intervenir des opérations d’excavation."@fr , "Geologic unit defined by human-made genesis involving excavation. Not necessarily defined by landform (a hole...), as they could have been subsequently filled landscaped etc. If the excavation is filled becomes an excavation with artificial ground wholly or partly superimposed on it. This sort of thing can become quite important in urban geology where an excavation can be filled and landscaped."@en ;
+        dct:modified       "2022-12-07T15:15:29.286Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/GeolUnitType/12> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/GeolUnitType/_12:4#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       12 ;
+        reg:register       <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    5 .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/4>
+        a                skos:Concept ;
+        rdfs:label       "Lithostratigraphic Unit"@en , "Unité lithostratigraphique"@fr ;
+        dct:description  "Unité géologique définie sur la base de ses propriétés lithologiques observables et distinctives ou par la combinaison des propriétés lithologiques et des relations stratigraphiques."@fr , "Geologic unit defined on the basis of observable and distinctive lithologic properties or combination of lithologic properties and stratigraphic relationships. Denotes a particular body of rock."@en ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:broader     <https://data.geoscience.fr/ncl/GeolUnitType/3> ;
+        skos:exactMatch  <http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/lithostratigraphicUnit> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        skos:notation    "4" ;
+        skos:prefLabel   "Unité lithostratigraphique"@fr , "Lithostratigraphic Unit"@en ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> ;
+        <https://data.geoscience.fr/def/main#nature>
+                <https://data.geoscience.fr/ncl/natelem/1> .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/_6>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Magnetostratigraphic Unit"@en , "Unité magnétostratigraphique"@fr ;
+        dct:dateAccepted   "2020-04-08T12:25:29.814Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2020-04-08T12:25:14.835Z"^^xsd:dateTime ;
+        dct:description    "Unité géologique définie par ses caractéristiques magnétiques."@fr , "Geologic unit defined by magnetic characteristics."@en ;
+        dct:modified       "2022-12-07T15:15:29.27Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/GeolUnitType/6> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/GeolUnitType/_6:4#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       6 ;
+        reg:register       <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    5 .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/15>
+        a                  skos:Concept ;
+        rdfs:label         "Biostratigraphic Unit"@en , "Unité biostratigraphique"@fr ;
+        dct:description    "Unité géologique définie sur la base de son contenu fossile."@fr , "Geologic unit defined based on fossil content. Five kinds of biozones are recognized by the revised NACSN (Lenz et al., 2000, Note 64, a recommended complete replacement of Articles 48 through 54 of the North American Stratigraphic Code (NACSN, 1983) accepted for publication 2000.): range biozone, interval biozone, lineage biozone, assemblage biozone, and abundance biozone. These represent different approaches to defining and recognizing biozones."@en ;
+        reg:category       <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:exactMatch    <http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/biostratigraphicUnit> ;
+        skos:inScheme      <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        skos:notation      "15" ;
+        skos:prefLabel     "Biostratigraphic Unit"@en , "Unité biostratigraphique"@fr ;
+        skos:topConceptOf  <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        adms:status        <http://inspire.ec.europa.eu/registry/status/valid> ;
+        <https://data.geoscience.fr/def/main#nature>
+                <https://data.geoscience.fr/ncl/natelem/1> .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/_17>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Alteration Unit"@en , "Unité d'altération"@fr ;
+        dct:dateAccepted   "2020-04-08T12:25:29.923Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2020-04-08T12:25:14.861Z"^^xsd:dateTime ;
+        dct:description    "Geologic unit defined by alteration process."@en , "Unité géologique définie par un processus d’altération."@fr ;
+        dct:modified       "2022-12-07T15:15:29.267Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/GeolUnitType/17> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/GeolUnitType/_17:4#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       17 ;
+        reg:register       <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    5 .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/22>
+        a                  skos:Concept ;
+        rdfs:label         "Geotechnical Unit"@en , "Unité géotechnique"@fr ;
+        dct:description    "Unité géologique définie par ses propriétés géotechniques"@fr , "Geologic unit defined by her geotechnical properties"@en ;
+        reg:category       <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme      <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        skos:notation      "22" ;
+        skos:prefLabel     "Unité géotechnique"@fr , "Geotechnical Unit"@en ;
+        skos:topConceptOf  <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        adms:status        <http://inspire.ec.europa.eu/registry/status/submitted> ;
+        <https://data.geoscience.fr/def/main#nature>
+                <https://data.geoscience.fr/ncl/natelem/1> .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/_11>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Artificial Ground"@en , "Sol artificiel"@fr ;
+        dct:dateAccepted   "2020-04-08T12:25:29.867Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2020-04-08T12:25:14.907Z"^^xsd:dateTime ;
+        dct:description    "Geologic unit defined by genesis involving direct human action to deposit or modify material."@en , "Unité géologique définie par une genèse faisant intervenir une action directe de l’homme consistant à déposer ou à modifier un matériau."@fr ;
+        dct:modified       "2022-12-07T15:15:29.288Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/GeolUnitType/11> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/GeolUnitType/_11:4#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       11 ;
+        reg:register       <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    5 .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/9>
+        a                  skos:Concept ;
+        rdfs:label         "Geophysical Unit"@en , "Unité géophysique"@fr ;
+        dct:description    "Unité géologique définie par ses caractéristiques géophysiques."@fr , "Geologic unit defined by its geophysical characteristics. Denotes that the properties used to define the unit are measured by intrumental techniques, not directly observable by humans, e.g. density, magnetic susceptibility, magnetization, electrical conductivity."@en ;
+        reg:category       <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:exactMatch    <http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/geophysicalUnit> ;
+        skos:inScheme      <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        skos:narrower      <https://data.geoscience.fr/ncl/GeolUnitType/6> ;
+        skos:notation      "9" ;
+        skos:prefLabel     "Unité géophysique"@fr , "Geophysical Unit"@en ;
+        skos:topConceptOf  <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        adms:status        <http://inspire.ec.europa.eu/registry/status/valid> ;
+        <https://data.geoscience.fr/def/main#nature>
+                <https://data.geoscience.fr/ncl/natelem/1> .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/3>
+        a                  skos:Concept ;
+        rdfs:label         "Lithologic Unit"@en , "Unité lithologique"@fr ;
+        dct:description    "Geologic unit defined by lithology independent of relationships to other units. Denotes a 'kind' of rock body characterized by lithology, e.g. basaltic rocks."@en , "Unité géologique définie par sa lithologie, indépendamment de ses relations avec les autres unités."@fr ;
+        reg:category       <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:exactMatch    <http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/lithologicUnit> ;
+        skos:inScheme      <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        skos:narrower      <https://data.geoscience.fr/ncl/GeolUnitType/1> , <https://data.geoscience.fr/ncl/GeolUnitType/4> ;
+        skos:notation      "3" ;
+        skos:prefLabel     "Lithologic Unit"@en , "Unité lithologique"@fr ;
+        skos:topConceptOf  <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        adms:status        <http://inspire.ec.europa.eu/registry/status/valid> ;
+        <https://data.geoscience.fr/def/main#nature>
+                <https://data.geoscience.fr/ncl/natelem/1> .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/_5>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Unité lithotectonique"@fr , "Lithotectonic Unit"@en ;
+        dct:dateAccepted   "2020-04-08T12:25:29.804Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2020-04-08T12:25:14.91Z"^^xsd:dateTime ;
+        dct:description    "Unité géologique définie sur la base de ses caractéristiques structurales ou de déformation, de relations mutuelles, de son origine ou de son évolution historique. Les matériaux qu'elle contient peuvent être ignés, sédimentaires ou métamorphiques."@fr , "Geologic unit defined defined on basis of structural or deformation features, mutual relations, origin or historical evolution. Contained material may be igneous, sedimentary, or metamorphic."@en ;
+        dct:modified       "2022-12-07T15:15:29.279Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/GeolUnitType/5> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/GeolUnitType/_5:4#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       5 ;
+        reg:register       <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    5 .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/14>
+        a                  skos:Concept ;
+        rdfs:label         "Unité allostratigraphique"@fr , "Allostratigraphic Unit"@en ;
+        dct:description    "Geologic unit defined by bounding surfaces. Not necessarily stratified. Donovon (2004, IUGS abstract Florence) makes good case for use of a noncommittal term for the bounding surface. While there may be no agreement that a given stratal boundary is a discontinuity, there is consensus that all the identified boundaries are stratal surfaces. Includes: 1. Unconformity bounded units (Salvador 1994), defined by bounding stratigraphic discontinuities ('significant unconformities'; unconformity is defined as surface of erosion in Salvador 1994).2. Sequence stratigraphic unit, an allostratigraphic unit that is used to interpret the depositional origin of sedimentary strata and assumes, though this is not always stated, an implicit connection to base level change. It does this by establishing how the sequence of strata accumulated in order in the sedimentary section over a subdividing framework of surfaces."@en , "Unité géologique définie par des contours de surface. Cette unité n’est pas nécessairement stratifiée."@fr ;
+        reg:category       <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:exactMatch    <http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/allostratigraphicUnit> ;
+        skos:inScheme      <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        skos:notation      "14" ;
+        skos:prefLabel     "Allostratigraphic Unit"@en , "Unité allostratigraphique"@fr ;
+        skos:topConceptOf  <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        adms:status        <http://inspire.ec.europa.eu/registry/status/valid> ;
+        <https://data.geoscience.fr/def/main#nature>
+                <https://data.geoscience.fr/ncl/natelem/1> .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/_16>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Unité chronostratigraphique"@fr , "Chronostratigraphic Unit"@en ;
+        dct:dateAccepted   "2020-04-08T12:25:29.915Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2020-04-08T12:25:14.751Z"^^xsd:dateTime ;
+        dct:description    "Unité géologique comprenant toutes les roches formées durant un intervalle de temps géologique spécifique."@fr , "Geologic unit that includes all rocks formed during a specific interval of geologic time"@en ;
+        dct:modified       "2022-12-07T15:15:29.268Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/GeolUnitType/16> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/GeolUnitType/_16:4#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       16 ;
+        reg:register       <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    5 .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/21>
+        a                skos:Concept ;
+        rdfs:label       "Soil unit"@en , "Unité de sol"@fr ;
+        dct:description  "Unité géologique définie par sa genèse (degré et processus de développement du sol)"@fr , "Geologic unit defined by genesis (soil development degree and process..)."@en ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:broader     <https://data.geoscience.fr/ncl/GeolUnitType/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        skos:narrower    <https://data.geoscience.fr/ncl/GeolUnitType/19> , <https://data.geoscience.fr/ncl/GeolUnitType/7> ;
+        skos:notation    "21" ;
+        skos:prefLabel   "Unité de sol"@fr , "Soil unit"@en ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/submitted> ;
+        <https://data.geoscience.fr/def/main#nature>
+                <https://data.geoscience.fr/ncl/natelem/1> .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/_10>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Unité de déformation"@fr , "Deformation Unit"@en ;
+        dct:dateAccepted   "2020-04-08T12:25:29.847Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2020-04-08T12:25:14.899Z"^^xsd:dateTime ;
+        dct:description    "Unité lithotectonique définie par son style de déformation ou sa structure géologique caractéristique, observable à l'affleurement"@fr , "Lithotectonic unit defined by deformation style or characteristic geologic structure observable in outcrop."@en ;
+        dct:modified       "2022-12-07T15:15:29.257Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/GeolUnitType/10> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/GeolUnitType/_10:4#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       10 ;
+        reg:register       <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    5 .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/_23>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Hydrogeological Unit"@en , "Unité hydrogéologique"@fr ;
+        dct:dateAccepted   "2020-04-08T13:01:51.546Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2020-04-08T13:00:59.908Z"^^xsd:dateTime ;
+        dct:description    "Unité géologique, aquifère ou non aquifère, correspondant à un système physique caractérisé au regard de son état et de ses caractéristiques hydrogéologiques."@fr , "Geological unit, aquifer or non-aquifer, corresponding to a physical system characterized with regard to its state and its hydrogeological characteristics"@en ;
+        dct:modified       "2022-12-07T15:15:29.282Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/GeolUnitType/23> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/GeolUnitType/_23:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       23 ;
+        reg:register       <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/GeolUnitType>
+        a                           skos:ConceptScheme , reg:Register , ldp:Container ;
+        rdfs:label                  "Unités géologiques"@fr , "Geologic Units types"@en ;
+        rdfs:member                 <https://data.geoscience.fr/ncl/GeolUnitType/14> , <https://data.geoscience.fr/ncl/GeolUnitType/20> , <https://data.geoscience.fr/ncl/GeolUnitType/16> , <https://data.geoscience.fr/ncl/GeolUnitType/5> , <https://data.geoscience.fr/ncl/GeolUnitType/11> , <https://data.geoscience.fr/ncl/GeolUnitType/7> , <https://data.geoscience.fr/ncl/GeolUnitType/10> , <https://data.geoscience.fr/ncl/GeolUnitType/19> , <https://data.geoscience.fr/ncl/GeolUnitType/3> , <https://data.geoscience.fr/ncl/GeolUnitType/18> , <https://data.geoscience.fr/ncl/GeolUnitType/22> , <https://data.geoscience.fr/ncl/GeolUnitType/21> , <https://data.geoscience.fr/ncl/GeolUnitType/12> , <https://data.geoscience.fr/ncl/GeolUnitType/4> , <https://data.geoscience.fr/ncl/GeolUnitType/13> , <https://data.geoscience.fr/ncl/GeolUnitType/9> , <https://data.geoscience.fr/ncl/GeolUnitType/15> , <https://data.geoscience.fr/ncl/GeolUnitType/23> , <https://data.geoscience.fr/ncl/GeolUnitType/6> , <https://data.geoscience.fr/ncl/GeolUnitType/2> , <https://data.geoscience.fr/ncl/GeolUnitType/17> , <https://data.geoscience.fr/ncl/GeolUnitType/1> ;
+        dct:description             "Ce registre recense l'ensemble unités géologiques."@fr , "This register lists all the geologic units."@en ;
+        dct:license                 <http://creativecommons.org/licenses/by/4.0/> ;
+        dct:modified                "2024-11-21T08:14:07.302Z"^^xsd:dateTime ;
+        reg:category                <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        reg:notation                "GeolUnitType" ;
+        reg:owner                   <https://data.geoscience.fr/ncl/structure/Owner/1> ;
+        ui:hierarchyChildProperty   skos:narrower ;
+        ui:hierarchyParentProperty  skos:broader ;
+        ui:hierarchyRootProperty    skos:topConceptOf ;
+        owl:versionInfo             2 ;
+        ldp:hasMemberRelation       rdfs:member ;
+        ldp:isMemberOfRelation      skos:inScheme .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/19>
+        a                skos:Concept ;
+        rdfs:label       "Pédoderme"@fr , "Pedoderm"@en ;
+        dct:description  "Geologic unit defined based on soil development and character. Pedoderm is not a surface classification unit because soil classification requires knowledge of the soil profile, which always extends some distance beneath the surface."@en , "Unité géologique définie en fonction du développement et du caractère du sol. Le pédoderme n'est pas une unité de classification de surface car la classification du sol nécessite la connaissance du profil du sol, qui s'étend toujours à une certaine distance sous la surface."@fr ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:broader     <https://data.geoscience.fr/ncl/GeolUnitType/21> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        skos:notation    "19" ;
+        skos:prefLabel   "Pédoderme"@fr , "Pedoderm"@en ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/submitted> ;
+        <https://data.geoscience.fr/def/main#nature>
+                <https://data.geoscience.fr/ncl/natelem/1> .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/2>
+        a                  skos:Concept ;
+        rdfs:label         "Lithogenetic Unit"@en , "Unité lithogénétique"@fr ;
+        dct:description    "Unité géologique définie par sa genèse. La genèse se manifeste par les propriétés physiques, mais le matériau n’est pas la propriété déterminante."@fr , "Geologic unit defined by genesis. The genesis is manifested by material properties, but the material is not the defining property. Example-- alluvial deposits, glacial deposits."@en ;
+        reg:category       <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:exactMatch    <http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/lithogeneticUnit> ;
+        skos:inScheme      <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        skos:narrower      <https://data.geoscience.fr/ncl/GeolUnitType/17> , <https://data.geoscience.fr/ncl/GeolUnitType/21> , <https://data.geoscience.fr/ncl/GeolUnitType/13> , <https://data.geoscience.fr/ncl/GeolUnitType/12> , <https://data.geoscience.fr/ncl/GeolUnitType/11> ;
+        skos:notation      "2" ;
+        skos:prefLabel     "Lithogenetic Unit"@en , "Unité lithogénétique"@fr ;
+        skos:topConceptOf  <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        adms:status        <http://inspire.ec.europa.eu/registry/status/valid> ;
+        <https://data.geoscience.fr/def/main#nature>
+                <https://data.geoscience.fr/ncl/natelem/1> .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/_4>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Lithostratigraphic Unit"@en , "Unité lithostratigraphique"@fr ;
+        dct:dateAccepted   "2020-04-08T12:25:29.79Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2020-04-08T12:25:14.772Z"^^xsd:dateTime ;
+        dct:description    "Geologic unit defined on the basis of observable and distinctive lithologic properties or combination of lithologic properties and stratigraphic relationships. Denotes a particular body of rock."@en , "Unité géologique définie sur la base de ses propriétés lithologiques observables et distinctives ou par la combinaison des propriétés lithologiques et des relations stratigraphiques."@fr ;
+        dct:modified       "2022-12-07T15:15:29.277Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/GeolUnitType/4> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/GeolUnitType/_4:4#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       4 ;
+        reg:register       <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    5 .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/13>
+        a                skos:Concept ;
+        rdfs:label       "Mass Movement Unit"@en , "Unité résultant d'un glissement de terrain"@fr ;
+        dct:description  "Unité géologique produite par un déplacement de matériau par gravité, vers le bas d'une pente, et caractérisé par un type de mouvement entraînant le dépôt, ainsi que par les rapports que les différents types de mouvements présents dans le dépôt entretiennent dans le temps et dans l’espace."@fr , "Geologic unit produced by gravity driven, down-slope displacemnt of material, and characterized by the type of movement giving rise to the deposit, and by how the individual movement types present in the deposit are related in time and space."@en ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:broader     <https://data.geoscience.fr/ncl/GeolUnitType/2> ;
+        skos:exactMatch  <http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/massMovementUnit> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        skos:notation    "13" ;
+        skos:prefLabel   "Mass Movement Unit"@en , "Unité résultant d'un glissement de terrain"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> ;
+        <https://data.geoscience.fr/def/main#nature>
+                <https://data.geoscience.fr/ncl/natelem/1> .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/_15>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Unité biostratigraphique"@fr , "Biostratigraphic Unit"@en ;
+        dct:dateAccepted   "2020-04-08T12:25:29.906Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2020-04-08T12:25:14.886Z"^^xsd:dateTime ;
+        dct:description    "Unité géologique définie sur la base de son contenu fossile."@fr , "Geologic unit defined based on fossil content. Five kinds of biozones are recognized by the revised NACSN (Lenz et al., 2000, Note 64, a recommended complete replacement of Articles 48 through 54 of the North American Stratigraphic Code (NACSN, 1983) accepted for publication 2000.): range biozone, interval biozone, lineage biozone, assemblage biozone, and abundance biozone. These represent different approaches to defining and recognizing biozones."@en ;
+        dct:modified       "2022-12-07T15:15:29.271Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/GeolUnitType/15> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/GeolUnitType/_15:4#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       15 ;
+        reg:register       <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    5 .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/20>
+        a                  skos:Concept ;
+        rdfs:label         "Unité géomorphologique"@fr , "Geomorphologic Unit"@en ;
+        dct:description    "Unité géologique définie par le relief de la surface, par ex. moraine bosselée"@fr , "Geologic unit defined by surface landform, e.g. hummocky moraine"@en ;
+        reg:category       <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme      <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        skos:notation      "20" ;
+        skos:prefLabel     "Unité géomorphologique"@fr , "Geomorphologic Unit"@en ;
+        skos:topConceptOf  <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        adms:status        <http://inspire.ec.europa.eu/registry/status/submitted> ;
+        <https://data.geoscience.fr/def/main#nature>
+                <https://data.geoscience.fr/ncl/natelem/1> .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/7>
+        a                skos:Concept ;
+        rdfs:label       "Pedostratigraphic Unit"@en , "Unité pédostratigraphique"@fr ;
+        dct:description  "Unité géologique qui représente un seul horizon pédologique dans une séquence de strates (consolidées ou non). La présence d'une unité géologique sus-jacente est requise, mais localement, l'horizon du sol peut être à la surface de la Terre (auquel cas il peut coïncider avec un pédoderme)."@fr , "Geologic unit that represents a single pedologic horizon in a sequence of strata (consolidated or non-consolidated). The presence of an overlying geologic unit is required, but locally the soil horizon may be at the Earth surface (in which case is may be coincident with a Pedoderm). See discussion at <https://www.seegrid.csiro.au/twiki/bin/view/CGIModel/PedostratigraphicUnit>"@en ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:broader     <https://data.geoscience.fr/ncl/GeolUnitType/21> ;
+        skos:exactMatch  <http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/pedostratigraphicUnit> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        skos:notation    "7" ;
+        skos:prefLabel   "Unité pédostratigraphique"@fr , "Pedostratigraphic Unit"@en ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> ;
+        <https://data.geoscience.fr/def/main#nature>
+                <https://data.geoscience.fr/ncl/natelem/1> .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/_22>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Unité géotechnique"@fr , "Geotechnical Unit"@en ;
+        dct:dateAccepted   "2020-04-08T13:01:20.419Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2020-04-08T13:00:59.909Z"^^xsd:dateTime ;
+        dct:description    "Geologic unit defined by her geotechnical properties"@en , "Unité géologique définie par ses propriétés géotechniques"@fr ;
+        dct:modified       "2022-12-07T15:15:29.287Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/GeolUnitType/22> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/GeolUnitType/_22:4#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       22 ;
+        reg:register       <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    5 .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/_9>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Unité géophysique"@fr , "Geophysical Unit"@en ;
+        dct:dateAccepted   "2020-04-08T12:25:29.837Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2020-04-08T12:25:14.892Z"^^xsd:dateTime ;
+        dct:description    "Geologic unit defined by its geophysical characteristics. Denotes that the properties used to define the unit are measured by intrumental techniques, not directly observable by humans, e.g. density, magnetic susceptibility, magnetization, electrical conductivity."@en , "Unité géologique définie par ses caractéristiques géophysiques."@fr ;
+        dct:modified       "2022-12-07T15:15:29.266Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/GeolUnitType/9> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/GeolUnitType/_9:4#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       9 ;
+        reg:register       <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    5 .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/18>
+        a                  skos:Concept ;
+        rdfs:label         "Unité à polarité chronostratigraphique"@fr , "Polarity Chronostratigraphic Unit"@en ;
+        dct:description    "Geologic unit defined by primary magnetic-polarity record imposed whien the rock was deposited or crystallized during a specific interval of geolgoic time. Kind of chronostratigraphic unit and kind of geophysical unit."@en , "Unité géologique définie par un enregistrement de polarité magnétique primaire imposé au moment où la roche s’est déposée ou cristallisée durant un intervalle spécifique de temps géologique."@fr ;
+        reg:category       <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:exactMatch    <http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/polarityChronostratigraphicUnit> ;
+        skos:inScheme      <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        skos:notation      "18" ;
+        skos:prefLabel     "Unité à polarité chronostratigraphique"@fr , "Polarity Chronostratigraphic Unit"@en ;
+        skos:topConceptOf  <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        adms:status        <http://inspire.ec.europa.eu/registry/status/valid> ;
+        <https://data.geoscience.fr/def/main#nature>
+                <https://data.geoscience.fr/ncl/natelem/1> .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/1>
+        a                skos:Concept ;
+        rdfs:label       "Lithodemic Unit"@en , "Unité lithodémique"@fr ;
+        dct:description  "Lithostratigraphic unit that lacks stratification"@en , "Unité lithostratigraphique dépourvue de stratification."@fr ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:broader     <https://data.geoscience.fr/ncl/GeolUnitType/3> ;
+        skos:exactMatch  <http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/lithodemicUnit> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        skos:notation    "1" ;
+        skos:prefLabel   "Unité lithodémique"@fr , "Lithodemic Unit"@en ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> ;
+        <https://data.geoscience.fr/def/main#nature>
+                <https://data.geoscience.fr/ncl/natelem/1> .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/_3>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Lithologic Unit"@en , "Unité lithologique"@fr ;
+        dct:dateAccepted   "2020-04-08T12:25:29.779Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2020-04-08T12:25:14.799Z"^^xsd:dateTime ;
+        dct:description    "Geologic unit defined by lithology independent of relationships to other units. Denotes a 'kind' of rock body characterized by lithology, e.g. basaltic rocks."@en , "Unité géologique définie par sa lithologie, indépendamment de ses relations avec les autres unités."@fr ;
+        dct:modified       "2022-12-07T15:15:29.291Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/GeolUnitType/3> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/GeolUnitType/_3:4#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       3 ;
+        reg:register       <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    5 .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/12>
+        a                skos:Concept ;
+        rdfs:label       "Excavation Unit"@en , "Unité d'excavation"@fr ;
+        dct:description  "Unité géologique définie par une genèse anthropique faisant intervenir des opérations d’excavation."@fr , "Geologic unit defined by human-made genesis involving excavation. Not necessarily defined by landform (a hole...), as they could have been subsequently filled landscaped etc. If the excavation is filled becomes an excavation with artificial ground wholly or partly superimposed on it. This sort of thing can become quite important in urban geology where an excavation can be filled and landscaped."@en ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:broader     <https://data.geoscience.fr/ncl/GeolUnitType/2> ;
+        skos:exactMatch  <http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/excavationUnit> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        skos:notation    "12" ;
+        skos:prefLabel   "Unité d'excavation"@fr , "Excavation Unit"@en ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> ;
+        <https://data.geoscience.fr/def/main#nature>
+                <https://data.geoscience.fr/ncl/natelem/1> .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/_14>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Unité allostratigraphique"@fr , "Allostratigraphic Unit"@en ;
+        dct:dateAccepted   "2020-04-08T12:25:29.895Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2020-04-08T12:25:14.819Z"^^xsd:dateTime ;
+        dct:description    "Geologic unit defined by bounding surfaces. Not necessarily stratified. Donovon (2004, IUGS abstract Florence) makes good case for use of a noncommittal term for the bounding surface. While there may be no agreement that a given stratal boundary is a discontinuity, there is consensus that all the identified boundaries are stratal surfaces. Includes: 1. Unconformity bounded units (Salvador 1994), defined by bounding stratigraphic discontinuities ('significant unconformities'; unconformity is defined as surface of erosion in Salvador 1994).2. Sequence stratigraphic unit, an allostratigraphic unit that is used to interpret the depositional origin of sedimentary strata and assumes, though this is not always stated, an implicit connection to base level change. It does this by establishing how the sequence of strata accumulated in order in the sedimentary section over a subdividing framework of surfaces."@en , "Unité géologique définie par des contours de surface. Cette unité n’est pas nécessairement stratifiée."@fr ;
+        dct:modified       "2022-12-07T15:15:29.275Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/GeolUnitType/14> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/GeolUnitType/_14:4#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       14 ;
+        reg:register       <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    5 .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/6>
+        a                skos:Concept ;
+        rdfs:label       "Magnetostratigraphic Unit"@en , "Unité magnétostratigraphique"@fr ;
+        dct:description  "Unité géologique définie par ses caractéristiques magnétiques."@fr , "Geologic unit defined by magnetic characteristics."@en ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:broader     <https://data.geoscience.fr/ncl/GeolUnitType/9> ;
+        skos:exactMatch  <http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/magnetostratigraphicUnit> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        skos:notation    "6" ;
+        skos:prefLabel   "Magnetostratigraphic Unit"@en , "Unité magnétostratigraphique"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> ;
+        <https://data.geoscience.fr/def/main#nature>
+                <https://data.geoscience.fr/ncl/natelem/1> .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/_21>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Soil unit"@en , "Unité de sol"@fr ;
+        dct:dateAccepted   "2020-04-08T12:25:29.954Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2020-04-08T12:25:14.848Z"^^xsd:dateTime ;
+        dct:description    "Unité géologique définie par sa genèse (degré et processus de développement du sol)"@fr , "Geologic unit defined by genesis (soil development degree and process..)."@en ;
+        dct:modified       "2022-12-07T15:15:29.25Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/GeolUnitType/21> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/GeolUnitType/_21:4#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       21 ;
+        reg:register       <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    5 .
+
+<https://data.geoscience.fr/ncl/GeolUnitType/17>
+        a                skos:Concept ;
+        rdfs:label       "Alteration Unit"@en , "Unité d'altération"@fr ;
+        dct:description  "Unité géologique définie par un processus d’altération."@fr , "Geologic unit defined by alteration process."@en ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:broader     <https://data.geoscience.fr/ncl/GeolUnitType/2> ;
+        skos:exactMatch  <http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/alterationUnit> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/GeolUnitType> ;
+        skos:notation    "17" ;
+        skos:prefLabel   "Unité d'altération"@fr , "Alteration Unit"@en ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> ;
+        <https://data.geoscience.fr/def/main#nature>
+                <https://data.geoscience.fr/ncl/natelem/1> .

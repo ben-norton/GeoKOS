@@ -1,0 +1,1645 @@
+@prefix schema: <https://schema.org/> .
+@prefix ssd:   <http://www.w3.org/ns/sparql-service-description#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix qb:    <http://purl.org/linked-data/cube#> .
+@prefix dgu:   <http://reference.data.gov.uk/def/reference/> .
+@prefix ui:    <http://purl.org/linked-data/registry-ui#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix reg:   <http://purl.org/linked-data/registry#> .
+@prefix api:   <http://purl.org/linked-data/api/vocab#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix odrs:  <http://schema.theodi.org/odrs#> .
+@prefix env-ui: <http://environment.data.gov.uk/registry/structure/ui/> .
+@prefix version: <http://purl.org/linked-data/version#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ldp:   <http://www.w3.org/ns/ldp#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix vs:    <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://data.geoscience.fr/ncl/RockComp/30>
+        a                skos:Concept ;
+        rdfs:label       "nodule carbonaté"@fr , "carbonate nodule"@en ;
+        dct:description  "Nodule de composition carbonatée, sans distintion de la phase minérale, provenant d'une précipitation in-situ."@fr ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "30" ;
+        skos:prefLabel   "carbonate nodule"@en , "nodule carbonaté"@fr ;
+        skos:related     <https://data.geoscience.fr/ncl/QualAdj/155> ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_36>
+        a                  reg:RegisterItem ;
+        rdfs:label         "oncoïde"@fr , "oncoid"@en ;
+        dct:dateAccepted   "2021-12-08T16:07:34.992Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.453Z"^^xsd:dateTime ;
+        dct:description    "Nodules calcaires ou non, non attachés, sphérique ou ovoïde, de taille mm à cm (généralement > 2 mm), qui présentent généralement un cortex micritique constitué de lames plus ou moins concentriques et se chevauchant partiellement autour d'un noyau bioclastique ou lithoclastique. Le terme oncoïde doit être considéré comme purement descriptif."@fr ;
+        dct:modified       "2022-12-06T12:58:56.197Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/36> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_36:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       36 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/_4>
+        a                  reg:RegisterItem ;
+        rdfs:label         "volcanic bomb"@en , "bombe volcanique"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:34.922Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.416Z"^^xsd:dateTime ;
+        dct:description    "Bloc de lave arrondi, piriforme ou fusiforme, d'un volume allant de quelques dm3 à plusieurs m3, projeté depuis un cratère. Une bombe peut avoir une forme dite en \"fuseau\", \"croûte de pain\", ou \"bouse de vache\", lié à la viscosité de la lave et le mode de projection de la bombe lors de sa retombée sur le sol."@fr ;
+        dct:modified       "2022-12-06T12:58:56.281Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/4> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_4:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       4 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp>
+        a                       ldp:Container , skos:ConceptScheme , reg:Register ;
+        rdfs:label              "Rock components"@en , "Eléments figurés"@fr ;
+        rdfs:member             <https://data.geoscience.fr/ncl/RockComp/34> , <https://data.geoscience.fr/ncl/RockComp/30> , <https://data.geoscience.fr/ncl/RockComp/37> , <https://data.geoscience.fr/ncl/RockComp/50> , <https://data.geoscience.fr/ncl/RockComp/10> , <https://data.geoscience.fr/ncl/RockComp/44> , <https://data.geoscience.fr/ncl/RockComp/45> , <https://data.geoscience.fr/ncl/RockComp/25> , <https://data.geoscience.fr/ncl/RockComp/19> , <https://data.geoscience.fr/ncl/RockComp/6> , <https://data.geoscience.fr/ncl/RockComp/32> , <https://data.geoscience.fr/ncl/RockComp/7> , <https://data.geoscience.fr/ncl/RockComp/17> , <https://data.geoscience.fr/ncl/RockComp/28> , <https://data.geoscience.fr/ncl/RockComp/48> , <https://data.geoscience.fr/ncl/RockComp/49> , <https://data.geoscience.fr/ncl/RockComp/55> , <https://data.geoscience.fr/ncl/RockComp/56> , <https://data.geoscience.fr/ncl/RockComp/36> , <https://data.geoscience.fr/ncl/RockComp/43> , <https://data.geoscience.fr/ncl/RockComp/18> , <https://data.geoscience.fr/ncl/RockComp/4> , <https://data.geoscience.fr/ncl/RockComp/5> , <https://data.geoscience.fr/ncl/RockComp/53> , <https://data.geoscience.fr/ncl/RockComp/13> , <https://data.geoscience.fr/ncl/RockComp/24> , <https://data.geoscience.fr/ncl/RockComp/20> , <https://data.geoscience.fr/ncl/RockComp/40> , <https://data.geoscience.fr/ncl/RockComp/41> , <https://data.geoscience.fr/ncl/RockComp/2> , <https://data.geoscience.fr/ncl/RockComp/39> , <https://data.geoscience.fr/ncl/RockComp/15> , <https://data.geoscience.fr/ncl/RockComp/26> , <https://data.geoscience.fr/ncl/RockComp/16> , <https://data.geoscience.fr/ncl/RockComp/27> , <https://data.geoscience.fr/ncl/RockComp/47> , <https://data.geoscience.fr/ncl/RockComp/54> , <https://data.geoscience.fr/ncl/RockComp/29> , <https://data.geoscience.fr/ncl/RockComp/35> , <https://data.geoscience.fr/ncl/RockComp/3> , <https://data.geoscience.fr/ncl/RockComp/31> , <https://data.geoscience.fr/ncl/RockComp/51> , <https://data.geoscience.fr/ncl/RockComp/52> , <https://data.geoscience.fr/ncl/RockComp/11> , <https://data.geoscience.fr/ncl/RockComp/22> , <https://data.geoscience.fr/ncl/RockComp/12> , <https://data.geoscience.fr/ncl/RockComp/23> , <https://data.geoscience.fr/ncl/RockComp/33> , <https://data.geoscience.fr/ncl/RockComp/1> , <https://data.geoscience.fr/ncl/RockComp/38> , <https://data.geoscience.fr/ncl/RockComp/8> , <https://data.geoscience.fr/ncl/RockComp/9> , <https://data.geoscience.fr/ncl/RockComp/21> , <https://data.geoscience.fr/ncl/RockComp/14> , <https://data.geoscience.fr/ncl/RockComp/46> , <https://data.geoscience.fr/ncl/RockComp/42> ;
+        dct:description         "This register contains rocks component which are the particles or grains of a sedimentary rock linked together by a matrix or a cement."@en , "Ce registre décrit les éléments figurés qui sont les particules ou grains d'une roche sédimentaire reliés entre eux par une matrice ou un ciment"@fr ;
+        dct:license             <http://creativecommons.org/licenses/by/4.0/> ;
+        dct:modified            "2024-11-20T14:50:57.561Z"^^xsd:dateTime ;
+        reg:category            <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        reg:notation            "RockComp" ;
+        reg:owner               <https://data.geoscience.fr/ncl/structure/Owner/1> ;
+        owl:versionInfo         3 ;
+        ldp:hasMemberRelation   rdfs:member ;
+        ldp:isMemberOfRelation  skos:inScheme .
+
+<https://data.geoscience.fr/ncl/RockComp/_15>
+        a                  reg:RegisterItem ;
+        rdfs:label         "mud ball"@en , "galet mou"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:34.951Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.409Z"^^xsd:dateTime ;
+        dct:description    "Galets dont l'origine provient d'une roche sédimentaire non lithifiés et d'éléments de taille très fins (lutites). Galets dont l'origine provient de l'arrachement d'un substratum boueux due à de forts courants tels que des dépôts gravitaires (avalanche sous-marine)."@fr ;
+        dct:modified       "2022-12-06T12:58:56.247Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/15> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_15:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       15 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/38>
+        a                skos:Concept ;
+        rdfs:label       "ooid"@en , "ooïde"@fr ;
+        dct:description  "Nodules sphérique ou ovoïde, carbonaté ou non, présentant un structure avec un noyau (nucleus) entouré d'un cortex externe composé de fines lamines concentriques carbonatées ou non. La plupart des ooïdes ont un diamètre inférieur à 2 mm avec une taille moyenne variant entre 0,5 et 1 mm. Ooïde est un terme générique qui regroupe les oolithes (ooïdes concentriques), les bahamites (ooïdes micritiques) et les sphérulites (ooïdes radiaires)."@fr ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "38" ;
+        skos:prefLabel   "ooïde"@fr , "ooid"@en ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/17>
+        a                skos:Concept ;
+        rdfs:label       "granule"@en , "granule"@fr ;
+        dct:description  "Elément rocheux de quelconque nature et origine, dont le taille varie entre 2 et 4mm de diamètre selon la classification de Wentworth."@fr ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "17" ;
+        skos:prefLabel   "granule"@en , "granule"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_44>
+        a                  reg:RegisterItem ;
+        rdfs:label         "pisolite"@en , "pisolithe"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:35.012Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.446Z"^^xsd:dateTime ;
+        dct:description    "Concrétion calcaire, subsphérique, formé de couches concentriques, de diamètre supérieur à 2mm qui correspond à une grosse oolithe."@fr ;
+        dct:modified       "2022-12-06T12:58:56.18Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/44> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_44:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       44 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/46>
+        a                skos:Concept ;
+        rdfs:label       "vadose pisolite"@en , "pisolithe vadose"@fr ;
+        dct:description  "Concrétion pisolithique se formant dans un sol à partir des solutions transportées par les eaux qui y circulent ; si elles sont nombreuses et serrées, leurs sections peuvent être polygonales."@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "46" ;
+        skos:prefLabel   "vadose pisolite"@en , "pisolithe vadose"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/25>
+        a                skos:Concept ;
+        rdfs:label       "mégabloc"@fr , "mega-block"@en ;
+        dct:description  "Terme générique désignant un élément rocheux, de nature et origine quelconque, dont la taille est métrique à pluri-métrique. Terme que l'on peut associé à un olistolithe."@fr ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "25" ;
+        skos:prefLabel   "mega-block"@en , "mégabloc"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_52>
+        a                  reg:RegisterItem ;
+        rdfs:label         "rounded flint"@en , "silex roulé"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:35.028Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.491Z"^^xsd:dateTime ;
+        dct:description    "Silex ayant une forme émoussé due à une érosion mécanique (éolien, fluviatile, marine)"@fr ;
+        dct:modified       "2022-12-06T12:58:56.155Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/52> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_52:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       52 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/7>
+        a                skos:Concept ;
+        rdfs:label       "chert"@en , "chert"@fr ;
+        dct:description  "Nom anglophone regroupant souvent dans la pratique les chailles, les silex, les jaspes et les silexites. C’est une roche sédimentaire silicifiée sous forme noduleuse ou de masse irrégulière principalement composée de spicules d'oursin calcédonisés ou d'opale, d'origine chimique ou biochimique."@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" , "Dictionary of Earth Sciences, third edition Michael Allaby" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "7" ;
+        skos:prefLabel   "chert"@en , "chert"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_31>
+        a                  reg:RegisterItem ;
+        rdfs:label         "sandstone nodule"@en , "nodule gréseux"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:34.979Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.447Z"^^xsd:dateTime ;
+        dct:description    "Nodule de composition gréseuse (>50% grains de quartz)"@fr ;
+        dct:modified       "2022-12-06T12:58:56.211Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/31> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_31:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       31 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/_10>
+        a                  reg:RegisterItem ;
+        rdfs:label         "débris"@fr , "debris"@en ;
+        dct:dateAccepted   "2021-12-08T16:07:34.939Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.469Z"^^xsd:dateTime ;
+        dct:description    "Fragment de roche, de fossile ou de végétaux que l'on retrouve dans un roche sans spécification de la taille de l'élément."@fr ;
+        dct:modified       "2022-12-06T12:58:56.274Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/10> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_10:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       10 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/54>
+        a                skos:Concept ;
+        rdfs:label       "rognon dolomitique"@fr , "dolomitic nodule"@en ;
+        dct:description  "Agglomération d'éléments calcaires dolomitisés ayant une forme arrondie et irrégulière"@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "54" ;
+        skos:prefLabel   "rognon dolomitique"@fr , "dolomitic nodule"@en ;
+        skos:related     <https://data.geoscience.fr/ncl/QualAdj/268> ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/33>
+        a                skos:Concept ;
+        rdfs:label       "phosphatic nodule"@en , "nodule phosphaté"@fr ;
+        dct:description  "Nodule à composition notable de phosphates, provenant d'une précipitation in-situ."@fr ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "33" ;
+        skos:prefLabel   "nodule phosphaté"@fr , "phosphatic nodule"@en ;
+        skos:related     <https://data.geoscience.fr/ncl/QualAdj/586> ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_7>
+        a                  reg:RegisterItem ;
+        rdfs:label         "chert"@fr , "chert"@en ;
+        dct:dateAccepted   "2021-12-08T16:07:34.93Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.388Z"^^xsd:dateTime ;
+        dct:description    "Nom anglophone regroupant souvent dans la pratique les chailles, les silex, les jaspes et les silexites. C’est une roche sédimentaire silicifiée sous forme noduleuse ou de masse irrégulière principalement composée de spicules d'oursin calcédonisés ou d'opale, d'origine chimique ou biochimique."@fr ;
+        dct:modified       "2022-12-06T12:58:56.251Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/7> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_7:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       7 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/_39>
+        a                  reg:RegisterItem ;
+        rdfs:label         "oolithe"@fr , "oolite"@en ;
+        dct:dateAccepted   "2021-12-08T16:07:35.003Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.359Z"^^xsd:dateTime ;
+        dct:description    "Type d'ooïde dont le cortex est formé de lamines concentriques bien individualisées."@fr ;
+        dct:modified       "2022-12-06T12:58:56.232Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/39> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_39:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       39 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/_18>
+        a                  reg:RegisterItem ;
+        rdfs:label         "grapestone"@fr , "grapestone"@en ;
+        dct:dateAccepted   "2021-12-08T16:07:34.958Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.461Z"^^xsd:dateTime ;
+        dct:description    "Grain carbonaté composite qui consiste à une agrégation d'éléments carbonatés (pellets, bioclastes...), réalisé par des algues ou une cimentation micritique. Cette agrégation se présente sous une forme sphéroïdale (grains de raisin) et se développe dans des environnements de faible énergie, sub tidale."@fr ;
+        dct:modified       "2022-12-06T12:58:56.292Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/18> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_18:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       18 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/41>
+        a                skos:Concept ;
+        rdfs:label       "peloid"@en , "pellet"@fr ;
+        dct:description  "Element carbonaté sphérique  de diamètre inférieur à 0.2mm, composé de calcaire cryptocristallin, sans structure interne visible, et souvent riche en matières organique car en grande partie d'origine fécale."@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "41" ;
+        skos:prefLabel   "pellet"@fr , "peloid"@en ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/20>
+        a                skos:Concept ;
+        rdfs:label       "gravier"@fr , "gravel"@en ;
+        dct:description  "Elément rocheux de quelconque nature et origine, dont la taille varie entre  1 et 10mm (Classification de Strakhov), 2 et 20mm (Classification de Cailleux), ou 4 et 64mm (Classification de Wentworth) de diamètre."@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "20" ;
+        skos:prefLabel   "gravier"@fr , "gravel"@en ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_47>
+        a                  reg:RegisterItem ;
+        rdfs:label         "pumice"@en , "ponce"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:35.017Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.426Z"^^xsd:dateTime ;
+        dct:description    "Roche magmatique volcanique vitreuse, très poreuse, de teinte claire et de faible densité qui se forme à partir de fragment de magma visqueux qui, projetés en l'air par un volcan, subissent une brutale chute de pression ce qui produit un dégazage et la formation de bulles séparées par de mince parois de verre volcaniques."@fr ;
+        dct:modified       "2022-12-06T12:58:56.246Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/47> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_47:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       47 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/2>
+        a                skos:Concept ;
+        rdfs:label       "bahamite"@en , "bahamite"@fr ;
+        dct:description  "Ooïde dont le cortex est constituée de micrite, au sein duquel les laminations sont difficile à distinguer ou ne peuvent pas être distinguées."@fr ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "2" ;
+        skos:prefLabel   "bahamite"@en , "bahamite"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/49>
+        a                skos:Concept ;
+        rdfs:label       "flint nodule"@en , "rognon de silex"@fr ;
+        dct:description  "Agglomération de silex ayant une forme arrondie et irrégulière"@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "49" ;
+        skos:prefLabel   "rognon de silex"@fr , "flint nodule"@en ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/28>
+        a                skos:Concept ;
+        rdfs:label       "nodule"@fr , "nodule"@en ;
+        dct:description  "Masse globuleuse, de taille centimétrique à décimétrique, rarement métrique, se différenciant par sa composition et/ou sa structure du reste de la roche qui la contient."@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "28" ;
+        skos:prefLabel   "nodule"@en , "nodule"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_55>
+        a                  reg:RegisterItem ;
+        rdfs:label         "flint nodule"@en , "rognon siliceux"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:35.032Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.41Z"^^xsd:dateTime ;
+        dct:description    "Agglomération d'éléments siliceux ayant une forme arrondie et irrégulière"@fr ;
+        dct:modified       "2022-12-06T12:58:56.225Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/55> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_55:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       55 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/_34>
+        a                  reg:RegisterItem ;
+        rdfs:label         "polymetallic nodule"@en , "nodule polymétallique"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:34.989Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.429Z"^^xsd:dateTime ;
+        dct:description    "Nodule principalement composé d'éléments métalliques se formant à la surface des fonds marins."@fr ;
+        dct:modified       "2022-12-06T12:58:56.264Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/34> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_34:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       34 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/_2>
+        a                  reg:RegisterItem ;
+        rdfs:label         "bahamite"@fr , "bahamite"@en ;
+        dct:dateAccepted   "2021-12-08T16:07:34.92Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.381Z"^^xsd:dateTime ;
+        dct:description    "Ooïde dont le cortex est constituée de micrite, au sein duquel les laminations sont difficile à distinguer ou ne peuvent pas être distinguées."@fr ;
+        dct:modified       "2022-12-06T12:58:56.21Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/2> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_2:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       2 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/_13>
+        a                  reg:RegisterItem ;
+        rdfs:label         "galet"@fr , "cobble"@en ;
+        dct:dateAccepted   "2021-12-08T16:07:34.946Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.374Z"^^xsd:dateTime ;
+        dct:description    "Elément rocheux, de quelconque nature et origine, dont la principale caractéristique est une forme émoussée due à une usure mécanique (éolien, fluviatile, marine).  La taille d'un galet s'étend entre 10 et 100mm de diamètre pour la classification de Strakhov et entre 20 et 200mm de diamètre pour la classification de Cailleux."@fr ;
+        dct:modified       "2022-12-06T12:58:56.114Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/13> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_13:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       13 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/36>
+        a                skos:Concept ;
+        rdfs:label       "oncoid"@en , "oncoïde"@fr ;
+        dct:description  "Nodules calcaires ou non, non attachés, sphérique ou ovoïde, de taille mm à cm (généralement > 2 mm), qui présentent généralement un cortex micritique constitué de lames plus ou moins concentriques et se chevauchant partiellement autour d'un noyau bioclastique ou lithoclastique. Le terme oncoïde doit être considéré comme purement descriptif."@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "36" ;
+        skos:prefLabel   "oncoïde"@fr , "oncoid"@en ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/15>
+        a                skos:Concept ;
+        rdfs:label       "galet mou"@fr , "mud ball"@en ;
+        dct:description  "Galets dont l'origine provient d'une roche sédimentaire non lithifiés et d'éléments de taille très fins (lutites). Galets dont l'origine provient de l'arrachement d'un substratum boueux due à de forts courants tels que des dépôts gravitaires (avalanche sous-marine)."@fr ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:altLabel    "mud clast"@en ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "15" ;
+        skos:prefLabel   "galet mou"@fr , "mud ball"@en ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_42>
+        a                  reg:RegisterItem ;
+        rdfs:label         "peloïde"@fr , "peloid"@en ;
+        dct:dateAccepted   "2021-12-08T16:07:35.006Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.418Z"^^xsd:dateTime ;
+        dct:description    "Terme général pour désigner un grains reconnaissables dans des roches carbonatées de nature micritique (pellet ou intraclaste)"@fr ;
+        dct:modified       "2022-12-06T12:58:56.253Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/42> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_42:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       42 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/_21>
+        a                  reg:RegisterItem ;
+        rdfs:label         "intraclaste"@fr , "intraclast"@en ;
+        dct:dateAccepted   "2021-12-08T16:07:34.966Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.436Z"^^xsd:dateTime ;
+        dct:description    "Fragment de roche pénécontemporain à la roche qui la contient et remanié sur place ou à faible distance."@fr ;
+        dct:modified       "2022-12-06T12:58:56.116Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/21> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_21:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       21 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/44>
+        a                skos:Concept ;
+        rdfs:label       "pisolite"@en , "pisolithe"@fr ;
+        dct:description  "Concrétion calcaire, subsphérique, formé de couches concentriques, de diamètre supérieur à 2mm qui correspond à une grosse oolithe."@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "44" ;
+        skos:prefLabel   "pisolite"@en , "pisolithe"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_50>
+        a                  reg:RegisterItem ;
+        rdfs:label         "scoria"@en , "scorie"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:35.027Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.47Z"^^xsd:dateTime ;
+        dct:description    "Fragment de lave vacuolaire présentant une faible densité, une surface irrégulièrement poreuse, hérissée d'arêtes et de pointes, apparaissant dans des projections volcaniques ou sur des coulées dont la surface est craquelée"@fr ;
+        dct:modified       "2022-12-06T12:58:56.261Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/50> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_50:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       50 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/5>
+        a                skos:Concept ;
+        rdfs:label       "chert"@en , "chaille"@fr ;
+        dct:description  "Accident siliceux se présentant sous forme de nodule de formes variées (1 à 30cm de diamètre), lits ou bancs continus, de couleur grisâtre à brunâtre et opaque. Les chailles (opales, calcédoine, quartz) contiennent des spicules d'éponges recristallisés en calcédoine, des quartz détritiques, et des témoins résiduels du calcaire en leurs cœurs (silicification périphérique et centripète). Les chailles se distinguent des silex par leur cassure mate non translucide et l'absence de patine. Les chailles sont principalement décrites dans les roches calcaires du Jurassique Supérieur que l'on retrouvent à l'Est et au Sud Est du Bassin de Paris."@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" , "Trauth et al., 1978" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "5" ;
+        skos:prefLabel   "chert"@en , "chaille"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_29>
+        a                  reg:RegisterItem ;
+        rdfs:label         "calcareous nodule"@en , "nodule calcaire"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:34.975Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.342Z"^^xsd:dateTime ;
+        dct:description    "Nodule de composition >50% CaCO3, provenant d'une précipitation in-situ"@fr ;
+        dct:modified       "2022-12-06T12:58:56.142Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/29> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_29:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       29 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/52>
+        a                skos:Concept ;
+        rdfs:label       "rounded flint"@en , "silex roulé"@fr ;
+        dct:description  "Silex ayant une forme émoussé due à une érosion mécanique (éolien, fluviatile, marine)"@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "52" ;
+        skos:prefLabel   "silex roulé"@fr , "rounded flint"@en ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/31>
+        a                skos:Concept ;
+        rdfs:label       "nodule gréseux"@fr , "sandstone nodule"@en ;
+        dct:description  "Nodule de composition gréseuse (>50% grains de quartz)"@fr ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "31" ;
+        skos:prefLabel   "nodule gréseux"@fr , "sandstone nodule"@en ;
+        skos:related     <https://data.geoscience.fr/ncl/QualAdj/392> ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/10>
+        a                skos:Concept ;
+        rdfs:label       "debris"@en , "débris"@fr ;
+        dct:description  "Fragment de roche, de fossile ou de végétaux que l'on retrouve dans un roche sans spécification de la taille de l'élément."@fr ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "10" ;
+        skos:prefLabel   "debris"@en , "débris"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_37>
+        a                  reg:RegisterItem ;
+        rdfs:label         "oncolite"@en , "oncolithe"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:34.995Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.518Z"^^xsd:dateTime ;
+        dct:description    "Nodules calcaires ou non, non attachés, sphérique ou ovoïde, de taille mm à cm (généralement > 2 mm), qui présentent généralement un cortex micritique constitué de lames plus ou moins concentriques et se chevauchant partiellement autour d'un noyau bioclastique ou lithoclastique. Le terme oncoïde doit être considéré comme purement descriptif."@fr ;
+        dct:modified       "2022-12-06T12:58:56.137Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/37> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_37:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       37 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/_5>
+        a                  reg:RegisterItem ;
+        rdfs:label         "chert"@en , "chaille"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:34.923Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.354Z"^^xsd:dateTime ;
+        dct:description    "Accident siliceux se présentant sous forme de nodule de formes variées (1 à 30cm de diamètre), lits ou bancs continus, de couleur grisâtre à brunâtre et opaque. Les chailles (opales, calcédoine, quartz) contiennent des spicules d'éponges recristallisés en calcédoine, des quartz détritiques, et des témoins résiduels du calcaire en leurs cœurs (silicification périphérique et centripète). Les chailles se distinguent des silex par leur cassure mate non translucide et l'absence de patine. Les chailles sont principalement décrites dans les roches calcaires du Jurassique Supérieur que l'on retrouvent à l'Est et au Sud Est du Bassin de Paris."@fr ;
+        dct:modified       "2022-12-06T12:58:56.128Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/5> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_5:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       5 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/_16>
+        a                  reg:RegisterItem ;
+        rdfs:label         "galet siliceux"@fr , "silicified cobble"@en ;
+        dct:dateAccepted   "2021-12-08T16:07:34.952Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.347Z"^^xsd:dateTime ;
+        dct:description    "Galet dont l'origine provient d'une roche siliceuse de type silex, ou chaille"@fr ;
+        dct:modified       "2022-12-06T12:58:56.189Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/16> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_16:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       16 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/39>
+        a                skos:Concept ;
+        rdfs:label       "oolite"@en , "oolithe"@fr ;
+        dct:description  "Type d'ooïde dont le cortex est formé de lamines concentriques bien individualisées."@fr ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "39" ;
+        skos:prefLabel   "oolithe"@fr , "oolite"@en ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/18>
+        a                skos:Concept ;
+        rdfs:label       "grapestone"@fr , "grapestone"@en ;
+        dct:description  "Grain carbonaté composite qui consiste à une agrégation d'éléments carbonatés (pellets, bioclastes...), réalisé par des algues ou une cimentation micritique. Cette agrégation se présente sous une forme sphéroïdale (grains de raisin) et se développe dans des environnements de faible énergie, sub tidale."@fr ;
+        dct:source       "Dictionary of Earth Sciences, third edition Michael Allaby" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "18" ;
+        skos:prefLabel   "grapestone"@fr , "grapestone"@en ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_45>
+        a                  reg:RegisterItem ;
+        rdfs:label         "iron-rich pisolite"@en , "pisolithe ferrugineux"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:35.015Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.394Z"^^xsd:dateTime ;
+        dct:description    "Pisolithes présentant un cortex constitué d'oxydes de fer"@fr ;
+        dct:modified       "2022-12-06T12:58:56.108Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/45> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_45:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       45 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/_24>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Lithic"@en , "lithoclaste"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:34.968Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.534Z"^^xsd:dateTime ;
+        dct:description    "Fragment de roche de quelconque nature et origine. On y distingue les extraclastes et les intraclastes selon la nature et/ou l'origine du claste lui-même et de la roche encaissant l'élément."@fr ;
+        dct:modified       "2022-12-06T12:58:56.163Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/24> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_24:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       24 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/47>
+        a                skos:Concept ;
+        rdfs:label       "ponce"@fr , "pumice"@en ;
+        dct:description  "Roche magmatique volcanique vitreuse, très poreuse, de teinte claire et de faible densité qui se forme à partir de fragment de magma visqueux qui, projetés en l'air par un volcan, subissent une brutale chute de pression ce qui produit un dégazage et la formation de bulles séparées par de mince parois de verre volcaniques."@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "47" ;
+        skos:prefLabel   "pumice"@en , "ponce"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/_RockComp>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Rock components"@en , "Eléments figurés"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:38.349Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.33Z"^^xsd:dateTime ;
+        dct:description    "Ce registre décrit les éléments figurés qui sont les particules ou grains d'une roche sédimentaire reliés entre eux par une matrice ou un ciment"@fr , "This register contains rocks component which are the particles or grains of a sedimentary rock linked together by a matrix or a cement."@en ;
+        dct:modified       "2024-11-20T14:50:57.561Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity         <https://data.geoscience.fr/ncl/RockComp> ;
+                             reg:entityVersion  <https://data.geoscience.fr/ncl/RockComp:3>
+                           ] ;
+        reg:itemClass      skos:ConceptScheme , reg:Register , ldp:Container ;
+        reg:notation       "RockComp" ;
+        reg:register       <https://data.geoscience.fr/ncl/> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/8>
+        a                skos:Concept ;
+        rdfs:label       "claste"@fr , "clast"@en ;
+        dct:description  "Fragment de cristal, de roche ou de fossile inclus dans une roche. La taille d'un claste peut aller des lutites au rudites."@fr ;
+        dct:source       "Dictionary of Earth Sciences,third edition Michael Allaby" , "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "8" ;
+        skos:prefLabel   "claste"@fr , "clast"@en ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_53>
+        a                  reg:RegisterItem ;
+        rdfs:label         "calcareous nodule"@en , "rognon calcaire"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:35.029Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.375Z"^^xsd:dateTime ;
+        dct:description    "Agglomération d'éléments calcaires ayant une forme arrondie et irrégulière"@fr ;
+        dct:modified       "2022-12-06T12:58:56.105Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/53> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_53:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       53 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/_32>
+        a                  reg:RegisterItem ;
+        rdfs:label         "nodule manganésifère"@fr , "manganese nodule"@en ;
+        dct:dateAccepted   "2021-12-08T16:07:34.979Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.404Z"^^xsd:dateTime ;
+        dct:description    "Nodule composé de composés métalliques dont les oxydes de Mn, provenant d'une précipitation in-situ."@fr ;
+        dct:modified       "2022-12-06T12:58:56.164Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/32> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_32:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       32 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/_11>
+        a                  reg:RegisterItem ;
+        rdfs:label         "dropstone"@fr , "dropstone"@en ;
+        dct:dateAccepted   "2021-12-08T16:07:34.94Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.537Z"^^xsd:dateTime ;
+        dct:description    "Terme anglais désignant un claste de roche tombé sur le fond marin et provenant de la fonte d'un glacier ou d'un iceberg. Un dropstone est reconnaissable par son isolement et sa taille grossière au milieu de sédiments fins et laminés."@fr ;
+        dct:modified       "2022-12-06T12:58:56.227Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/11> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_11:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       11 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/55>
+        a                skos:Concept ;
+        rdfs:label       "rognon siliceux"@fr , "flint nodule"@en ;
+        dct:description  "Agglomération d'éléments siliceux ayant une forme arrondie et irrégulière"@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "55" ;
+        skos:prefLabel   "flint nodule"@en , "rognon siliceux"@fr ;
+        skos:related     <https://data.geoscience.fr/ncl/QualAdj/664> ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/34>
+        a                skos:Concept ;
+        rdfs:label       "polymetallic nodule"@en , "nodule polymétallique"@fr ;
+        dct:description  "Nodule principalement composé d'éléments métalliques se formant à la surface des fonds marins."@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "34" ;
+        skos:prefLabel   "polymetallic nodule"@en , "nodule polymétallique"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/13>
+        a                skos:Concept ;
+        rdfs:label       "galet"@fr , "cobble"@en ;
+        dct:description  "Elément rocheux, de quelconque nature et origine, dont la principale caractéristique est une forme émoussée due à une usure mécanique (éolien, fluviatile, marine).  La taille d'un galet s'étend entre 10 et 100mm de diamètre pour la classification de Strakhov et entre 20 et 200mm de diamètre pour la classification de Cailleux."@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "13" ;
+        skos:prefLabel   "cobble"@en , "galet"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_40>
+        a                  reg:RegisterItem ;
+        rdfs:label         "iron-rich oolite"@en , "oolithe ferrugineuse"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:35.004Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.386Z"^^xsd:dateTime ;
+        dct:description    "Oolithe dont le cortex est constitué d'oxydes de fer."@fr ;
+        dct:modified       "2022-12-06T12:58:56.161Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/40> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_40:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       40 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/_8>
+        a                  reg:RegisterItem ;
+        rdfs:label         "clast"@en , "claste"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:34.931Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.46Z"^^xsd:dateTime ;
+        dct:description    "Fragment de cristal, de roche ou de fossile inclus dans une roche. La taille d'un claste peut aller des lutites au rudites."@fr ;
+        dct:modified       "2022-12-06T12:58:56.294Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/8> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_8:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       8 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/_19>
+        a                  reg:RegisterItem ;
+        rdfs:label         "gravel"@en , "gravelle"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:34.959Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.535Z"^^xsd:dateTime ;
+        dct:description    "Element rocheux de quelconque nature et origine et dont la taille se rapporte à celle d’un grain de sable ou d'un gravier. Terme utilisé pour les petits éléments calcaires arrondis ou émoussés dont la taille varie entre 0.5 et 3mm de diamètre. Ils ont la spécificité d'être de même nature car provenant d'une même source et se distinguant du ciment."@fr ;
+        dct:modified       "2022-12-06T12:58:56.249Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/19> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_19:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       19 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/42>
+        a                skos:Concept ;
+        rdfs:label       "peloid"@en , "peloïde"@fr ;
+        dct:description  "Terme général pour désigner un grains reconnaissables dans des roches carbonatées de nature micritique (pellet ou intraclaste)"@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "42" ;
+        skos:prefLabel   "peloïde"@fr , "peloid"@en ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/21>
+        a                skos:Concept ;
+        rdfs:label       "intraclaste"@fr , "intraclast"@en ;
+        dct:description  "Fragment de roche pénécontemporain à la roche qui la contient et remanié sur place ou à faible distance."@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "21" ;
+        skos:prefLabel   "intraclast"@en , "intraclaste"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_48>
+        a                  reg:RegisterItem ;
+        rdfs:label         "nodule"@en , "rognon"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:35.018Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.485Z"^^xsd:dateTime ;
+        dct:description    "Masse minérale irrégulièrement arrondie, contenue dans une roche de nature différente (rognons de silex dans la craie, par exemple)."@fr ;
+        dct:modified       "2022-12-06T12:58:56.198Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/48> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_48:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       48 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/3>
+        a                skos:Concept ;
+        rdfs:label       "bloc"@fr , "block"@en ;
+        dct:description  "Elément rocheux, de quelconque nature et origine, dont la taille est supérieure à un diamètre de 100mm (Classification de Strakhov), 200mm (Classification de Cailleux) ou 256mm (Classification de Wentworth). Le bloc correspond à la fraction la plus grossière des rudites."@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "3" ;
+        skos:prefLabel   "block"@en , "bloc"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_27>
+        a                  reg:RegisterItem ;
+        rdfs:label         "miche"@fr , "nodule"@en ;
+        dct:dateAccepted   "2021-12-08T16:07:34.974Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.507Z"^^xsd:dateTime ;
+        dct:description    "Aspect de la roche sous forme noduleuse ou de masse noduleuse de taille pluri-décimétrique."@fr ;
+        dct:modified       "2022-12-06T12:58:56.228Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/27> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_27:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       27 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/50>
+        a                skos:Concept ;
+        rdfs:label       "scoria"@en , "scorie"@fr ;
+        dct:description  "Fragment de lave vacuolaire présentant une faible densité, une surface irrégulièrement poreuse, hérissée d'arêtes et de pointes, apparaissant dans des projections volcaniques ou sur des coulées dont la surface est craquelée"@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "50" ;
+        skos:prefLabel   "scoria"@en , "scorie"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/29>
+        a                skos:Concept ;
+        rdfs:label       "calcareous nodule"@en , "nodule calcaire"@fr ;
+        dct:description  "Nodule de composition >50% CaCO3, provenant d'une précipitation in-situ"@fr ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "29" ;
+        skos:prefLabel   "nodule calcaire"@fr , "calcareous nodule"@en ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_56>
+        a                  reg:RegisterItem ;
+        rdfs:label         "spherulite"@en , "sphérulite"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:35.033Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.353Z"^^xsd:dateTime ;
+        dct:description    "Ooïde radiaire caractérisée par un tissu cortical constitué de cristaux fibroradié"@fr ;
+        dct:modified       "2022-12-06T12:58:56.162Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/56> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_56:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       56 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/_35>
+        a                  reg:RegisterItem ;
+        rdfs:label         "chert nodule"@en , "nodule siliceux"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:34.991Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.492Z"^^xsd:dateTime ;
+        dct:description    "Nodule principalement composé d'éléments siliceux."@fr ;
+        dct:modified       "2022-12-06T12:58:56.216Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/35> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_35:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       35 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/_3>
+        a                  reg:RegisterItem ;
+        rdfs:label         "block"@en , "bloc"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:34.921Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.52Z"^^xsd:dateTime ;
+        dct:description    "Elément rocheux, de quelconque nature et origine, dont la taille est supérieure à un diamètre de 100mm (Classification de Strakhov), 200mm (Classification de Cailleux) ou 256mm (Classification de Wentworth). Le bloc correspond à la fraction la plus grossière des rudites."@fr ;
+        dct:modified       "2022-12-06T12:58:56.233Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/3> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_3:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       3 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/_14>
+        a                  reg:RegisterItem ;
+        rdfs:label         "imbricated Cobbles"@en , "galet imbriqué"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:34.95Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.51Z"^^xsd:dateTime ;
+        dct:description    "Galets dont leurs positions est inclinée par rapport au sens du courant et se recouvrent les uns sur les autres sous forme d'empilement de tuile et formant ainsi des imbrications. Les galets imbriqués se retrouvent principalement dans des dépôts continentaux de type fluviatiles."@fr ;
+        dct:modified       "2022-12-06T12:58:56.289Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/14> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_14:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       14 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/37>
+        a                skos:Concept ;
+        rdfs:label       "oncolite"@en , "oncolithe"@fr ;
+        dct:description  "Nodules calcaires ou non, non attachés, sphérique ou ovoïde, de taille mm à cm (généralement > 2 mm), qui présentent généralement un cortex micritique constitué de lames plus ou moins concentriques et se chevauchant partiellement autour d'un noyau bioclastique ou lithoclastique. Le terme oncoïde doit être considéré comme purement descriptif."@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "37" ;
+        skos:prefLabel   "oncolite"@en , "oncolithe"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/16>
+        a                skos:Concept ;
+        rdfs:label       "galet siliceux"@fr , "silicified cobble"@en ;
+        dct:description  "Galet dont l'origine provient d'une roche siliceuse de type silex, ou chaille"@fr ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "16" ;
+        skos:prefLabel   "galet siliceux"@fr , "silicified cobble"@en ;
+        skos:related     <https://data.geoscience.fr/ncl/QualAdj/664> ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_43>
+        a                  reg:RegisterItem ;
+        rdfs:label         "pisolite"@en , "pisoïde"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:35.011Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.366Z"^^xsd:dateTime ;
+        dct:description    "Concrétion calcaire, subsphérique, formé de couches concentriques, de diamètre supérieur à 2mm qui correspond à une grosse oolithe."@fr ;
+        dct:modified       "2022-12-06T12:58:56.219Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/43> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_43:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       43 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/_22>
+        a                  reg:RegisterItem ;
+        rdfs:label         "lapilli"@en , "lapilli"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:34.967Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.502Z"^^xsd:dateTime ;
+        dct:description    "Fragment de lave (élément pyroclastique) projeté lors de l'éruption d'un volcan. Elément à surface scoriacée ou non, avec une granulométrie comprise entre 2 et 30mm, ou entre 2 et 64mm de diamètre."@fr ;
+        dct:modified       "2022-12-06T12:58:56.279Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/22> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_22:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       22 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/45>
+        a                skos:Concept ;
+        rdfs:label       "iron-rich pisolite"@en , "pisolithe ferrugineux"@fr ;
+        dct:description  "Pisolithes présentant un cortex constitué d'oxydes de fer"@fr ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "45" ;
+        skos:prefLabel   "iron-rich pisolite"@en , "pisolithe ferrugineux"@fr ;
+        skos:related     <https://data.geoscience.fr/ncl/QualAdj/329> ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/24>
+        a                skos:Concept ;
+        rdfs:label       "lithoclaste"@fr , "Lithic"@en ;
+        dct:description  "Fragment de roche de quelconque nature et origine. On y distingue les extraclastes et les intraclastes selon la nature et/ou l'origine du claste lui-même et de la roche encaissant l'élément."@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:altLabel    "élément lithique"@fr ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "24" ;
+        skos:prefLabel   "lithoclaste"@fr , "Lithic"@en ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_51>
+        a                  reg:RegisterItem ;
+        rdfs:label         "silex"@fr , "flint nodule"@en ;
+        dct:dateAccepted   "2021-12-08T16:07:35.028Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.542Z"^^xsd:dateTime ;
+        dct:description    "Roche dure, à grains très fin (calcédoine et quarts cryptocristallins, sans grains détritiques), jaune clair, brune à noire, à cassure lisse et conchoïdale, à éclat luisant, et à bords aigus et translucides."@fr ;
+        dct:modified       "2022-12-06T12:58:56.215Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/51> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_51:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       51 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/6>
+        a                skos:Concept ;
+        rdfs:label       "débris de charbon"@fr , "coal"@en ;
+        dct:description  "Particules issues de charbon, roche sédimentaire de couleur marrons à noire stratifiée et essentiellement formée de débris végétaux."@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" , "Dictionary of Earth Sciences, third edition Michael Allaby" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "6" ;
+        skos:prefLabel   "coal"@en , "débris de charbon"@fr ;
+        skos:related     <https://data.geoscience.fr/ncl/litho/845> ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_30>
+        a                  reg:RegisterItem ;
+        rdfs:label         "carbonate nodule"@en , "nodule carbonaté"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:34.978Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.368Z"^^xsd:dateTime ;
+        dct:description    "Nodule de composition carbonatée, sans distintion de la phase minérale, provenant d'une précipitation in-situ."@fr ;
+        dct:modified       "2022-12-06T12:58:56.252Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/30> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_30:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       30 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/53>
+        a                skos:Concept ;
+        rdfs:label       "rognon calcaire"@fr , "calcareous nodule"@en ;
+        dct:description  "Agglomération d'éléments calcaires ayant une forme arrondie et irrégulière"@fr ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "53" ;
+        skos:prefLabel   "rognon calcaire"@fr , "calcareous nodule"@en ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/32>
+        a                skos:Concept ;
+        rdfs:label       "manganese nodule"@en , "nodule manganésifère"@fr ;
+        dct:description  "Nodule composé de composés métalliques dont les oxydes de Mn, provenant d'une précipitation in-situ."@fr ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "32" ;
+        skos:prefLabel   "nodule manganésifère"@fr , "manganese nodule"@en ;
+        skos:related     <https://data.geoscience.fr/ncl/QualAdj/465> ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/11>
+        a                skos:Concept ;
+        rdfs:label       "dropstone"@en , "dropstone"@fr ;
+        dct:description  "Terme anglais désignant un claste de roche tombé sur le fond marin et provenant de la fonte d'un glacier ou d'un iceberg. Un dropstone est reconnaissable par son isolement et sa taille grossière au milieu de sédiments fins et laminés."@fr ;
+        dct:source       "Dictionary of Earth Sciences, third edition Michael Allaby" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "11" ;
+        skos:prefLabel   "dropstone"@en , "dropstone"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_38>
+        a                  reg:RegisterItem ;
+        rdfs:label         "ooïde"@fr , "ooid"@en ;
+        dct:dateAccepted   "2021-12-08T16:07:34.995Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.479Z"^^xsd:dateTime ;
+        dct:description    "Nodules sphérique ou ovoïde, carbonaté ou non, présentant un structure avec un noyau (nucleus) entouré d'un cortex externe composé de fines lamines concentriques carbonatées ou non. La plupart des ooïdes ont un diamètre inférieur à 2 mm avec une taille moyenne variant entre 0,5 et 1 mm. Ooïde est un terme générique qui regroupe les oolithes (ooïdes concentriques), les bahamites (ooïdes micritiques) et les sphérulites (ooïdes radiaires)."@fr ;
+        dct:modified       "2022-12-06T12:58:56.28Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/38> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_38:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       38 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/_6>
+        a                  reg:RegisterItem ;
+        rdfs:label         "coal"@en , "débris de charbon"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:34.927Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.44Z"^^xsd:dateTime ;
+        dct:description    "Particules issues de charbon, roche sédimentaire de couleur marrons à noire stratifiée et essentiellement formée de débris végétaux."@fr ;
+        dct:modified       "2022-12-06T12:58:56.195Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/6> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_6:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       6 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/_17>
+        a                  reg:RegisterItem ;
+        rdfs:label         "granule"@fr , "granule"@en ;
+        dct:dateAccepted   "2021-12-08T16:07:34.957Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.43Z"^^xsd:dateTime ;
+        dct:description    "Elément rocheux de quelconque nature et origine, dont le taille varie entre 2 et 4mm de diamètre selon la classification de Wentworth."@fr ;
+        dct:modified       "2022-12-06T12:58:56.123Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/17> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_17:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       17 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/40>
+        a                skos:Concept ;
+        rdfs:label       "oolithe ferrugineuse"@fr , "iron-rich oolite"@en ;
+        dct:description  "Oolithe dont le cortex est constitué d'oxydes de fer."@fr ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "40" ;
+        skos:prefLabel   "iron-rich oolite"@en , "oolithe ferrugineuse"@fr ;
+        skos:related     <https://data.geoscience.fr/ncl/QualAdj/329> ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/19>
+        a                skos:Concept ;
+        rdfs:label       "gravel"@en , "gravelle"@fr ;
+        dct:description  "Element rocheux de quelconque nature et origine et dont la taille se rapporte à celle d’un grain de sable ou d'un gravier. Terme utilisé pour les petits éléments calcaires arrondis ou émoussés dont la taille varie entre 0.5 et 3mm de diamètre. Ils ont la spécificité d'être de même nature car provenant d'une même source et se distinguant du ciment."@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "19" ;
+        skos:prefLabel   "gravel"@en , "gravelle"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_46>
+        a                  reg:RegisterItem ;
+        rdfs:label         "pisolithe vadose"@fr , "vadose pisolite"@en ;
+        dct:dateAccepted   "2021-12-08T16:07:35.016Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.458Z"^^xsd:dateTime ;
+        dct:description    "Concrétion pisolithique se formant dans un sol à partir des solutions transportées par les eaux qui y circulent ; si elles sont nombreuses et serrées, leurs sections peuvent être polygonales."@fr ;
+        dct:modified       "2022-12-06T12:58:56.271Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/46> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_46:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       46 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/1>
+        a                skos:Concept ;
+        rdfs:label       "aggregate"@en , "agrégat"@fr ;
+        dct:description  "Petites masses plus ou moins lobées et formées par la coalescence de pellets, grains ou de particules. Ceci se retrouve dans les roche sédimentaires."@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "1" ;
+        skos:prefLabel   "aggregate"@en , "agrégat"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_25>
+        a                  reg:RegisterItem ;
+        rdfs:label         "mega-block"@en , "mégabloc"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:34.969Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.484Z"^^xsd:dateTime ;
+        dct:description    "Terme générique désignant un élément rocheux, de nature et origine quelconque, dont la taille est métrique à pluri-métrique. Terme que l'on peut associé à un olistolithe."@fr ;
+        dct:modified       "2022-12-06T12:58:56.125Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/25> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_25:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       25 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/48>
+        a                skos:Concept ;
+        rdfs:label       "nodule"@en , "rognon"@fr ;
+        dct:description  "Masse minérale irrégulièrement arrondie, contenue dans une roche de nature différente (rognons de silex dans la craie, par exemple)."@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "48" ;
+        skos:prefLabel   "nodule"@en , "rognon"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/27>
+        a                skos:Concept ;
+        rdfs:label       "nodule"@en , "miche"@fr ;
+        dct:description  "Aspect de la roche sous forme noduleuse ou de masse noduleuse de taille pluri-décimétrique."@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "27" ;
+        skos:prefLabel   "nodule"@en , "miche"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_54>
+        a                  reg:RegisterItem ;
+        rdfs:label         "dolomitic nodule"@en , "rognon dolomitique"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:35.03Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.516Z"^^xsd:dateTime ;
+        dct:description    "Agglomération d'éléments calcaires dolomitisés ayant une forme arrondie et irrégulière"@fr ;
+        dct:modified       "2022-12-06T12:58:56.273Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/54> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_54:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       54 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/_33>
+        a                  reg:RegisterItem ;
+        rdfs:label         "phosphatic nodule"@en , "nodule phosphaté"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:34.98Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.472Z"^^xsd:dateTime ;
+        dct:description    "Nodule à composition notable de phosphates, provenant d'une précipitation in-situ."@fr ;
+        dct:modified       "2022-12-06T12:58:56.117Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/33> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_33:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       33 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/9>
+        a                skos:Concept ;
+        rdfs:label       "concretion"@en , "concrétion"@fr ;
+        dct:description  "Accumulation minérale centrifuge et éventuellement concentrique ou radiaire autour d'un nucléus de nature variable."@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition " ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "9" ;
+        skos:prefLabel   "concretion"@en , "concrétion"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_1>
+        a                  reg:RegisterItem ;
+        rdfs:label         "agrégat"@fr , "aggregate"@en ;
+        dct:dateAccepted   "2021-12-08T16:07:34.912Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.496Z"^^xsd:dateTime ;
+        dct:description    "Petites masses plus ou moins lobées et formées par la coalescence de pellets, grains ou de particules. Ceci se retrouve dans les roche sédimentaires."@fr ;
+        dct:modified       "2022-12-06T12:58:56.143Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/1> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_1:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       1 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/56>
+        a                skos:Concept ;
+        rdfs:label       "spherulite"@en , "sphérulite"@fr ;
+        dct:description  "Ooïde radiaire caractérisée par un tissu cortical constitué de cristaux fibroradié"@fr ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "56" ;
+        skos:prefLabel   "spherulite"@en , "sphérulite"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/35>
+        a                skos:Concept ;
+        rdfs:label       "nodule siliceux"@fr , "chert nodule"@en ;
+        dct:description  "Nodule principalement composé d'éléments siliceux."@fr ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "35" ;
+        skos:prefLabel   "chert nodule"@en , "nodule siliceux"@fr ;
+        skos:related     <https://data.geoscience.fr/ncl/QualAdj/664> ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/14>
+        a                skos:Concept ;
+        rdfs:label       "galet imbriqué"@fr , "imbricated Cobbles"@en ;
+        dct:description  "Galets dont leurs positions est inclinée par rapport au sens du courant et se recouvrent les uns sur les autres sous forme d'empilement de tuile et formant ainsi des imbrications. Les galets imbriqués se retrouvent principalement dans des dépôts continentaux de type fluviatiles."@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "14" ;
+        skos:prefLabel   "galet imbriqué"@fr , "imbricated Cobbles"@en ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_41>
+        a                  reg:RegisterItem ;
+        rdfs:label         "peloid"@en , "pellet"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:35.005Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.528Z"^^xsd:dateTime ;
+        dct:description    "Element carbonaté sphérique  de diamètre inférieur à 0.2mm, composé de calcaire cryptocristallin, sans structure interne visible, et souvent riche en matières organique car en grande partie d'origine fécale."@fr ;
+        dct:modified       "2022-12-06T12:58:56.091Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/41> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_41:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       41 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/_9>
+        a                  reg:RegisterItem ;
+        rdfs:label         "concretion"@en , "concrétion"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:34.938Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.425Z"^^xsd:dateTime ;
+        dct:description    "Accumulation minérale centrifuge et éventuellement concentrique ou radiaire autour d'un nucléus de nature variable."@fr ;
+        dct:modified       "2022-12-06T12:58:56.153Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/9> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_9:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       9 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/_20>
+        a                  reg:RegisterItem ;
+        rdfs:label         "gravier"@fr , "gravel"@en ;
+        dct:dateAccepted   "2021-12-08T16:07:34.964Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.477Z"^^xsd:dateTime ;
+        dct:description    "Elément rocheux de quelconque nature et origine, dont la taille varie entre  1 et 10mm (Classification de Strakhov), 2 et 20mm (Classification de Cailleux), ou 4 et 64mm (Classification de Wentworth) de diamètre."@fr ;
+        dct:modified       "2022-12-06T12:58:56.156Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/20> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_20:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       20 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/43>
+        a                skos:Concept ;
+        rdfs:label       "pisoïde"@fr , "pisolite"@en ;
+        dct:description  "Concrétion calcaire, subsphérique, formé de couches concentriques, de diamètre supérieur à 2mm qui correspond à une grosse oolithe."@fr ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "43" ;
+        skos:prefLabel   "pisolite"@en , "pisoïde"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/22>
+        a                skos:Concept ;
+        rdfs:label       "lapilli"@en , "lapilli"@fr ;
+        dct:description  "Fragment de lave (élément pyroclastique) projeté lors de l'éruption d'un volcan. Elément à surface scoriacée ou non, avec une granulométrie comprise entre 2 et 30mm, ou entre 2 et 64mm de diamètre."@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "22" ;
+        skos:prefLabel   "lapilli"@en , "lapilli"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_49>
+        a                  reg:RegisterItem ;
+        rdfs:label         "flint nodule"@en , "rognon de silex"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:35.018Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.449Z"^^xsd:dateTime ;
+        dct:description    "Agglomération de silex ayant une forme arrondie et irrégulière"@fr ;
+        dct:modified       "2022-12-06T12:58:56.12Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/49> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_49:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       49 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/4>
+        a                skos:Concept ;
+        rdfs:label       "bombe volcanique"@fr , "volcanic bomb"@en ;
+        dct:description  "Bloc de lave arrondi, piriforme ou fusiforme, d'un volume allant de quelques dm3 à plusieurs m3, projeté depuis un cratère. Une bombe peut avoir une forme dite en \"fuseau\", \"croûte de pain\", ou \"bouse de vache\", lié à la viscosité de la lave et le mode de projection de la bombe lors de sa retombée sur le sol."@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "4" ;
+        skos:prefLabel   "bombe volcanique"@fr , "volcanic bomb"@en ;
+        skos:related     <https://data.geoscience.fr/ncl/QualAdj/710> ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<https://data.geoscience.fr/ncl/RockComp/_28>
+        a                  reg:RegisterItem ;
+        rdfs:label         "nodule"@en , "nodule"@fr ;
+        dct:dateAccepted   "2021-12-08T16:07:34.975Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2021-12-08T16:07:21.395Z"^^xsd:dateTime ;
+        dct:description    "Masse globuleuse, de taille centimétrique à décimétrique, rarement métrique, se différenciant par sa composition et/ou sa structure du reste de la roche qui la contient."@fr ;
+        dct:modified       "2022-12-06T12:58:56.194Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <https://data.geoscience.fr/ncl/RockComp/28> ;
+                             reg:sourceGraph  <https://data.geoscience.fr/ncl/RockComp/_28:3#graph>
+                           ] ;
+        reg:itemClass      skos:Concept ;
+        reg:notation       28 ;
+        reg:register       <https://data.geoscience.fr/ncl/RockComp> ;
+        reg:status         reg:statusStable ;
+        reg:submitter      [ foaf:accountName  "h.bressan@brgm.fr" ;
+                             foaf:name         "Hélène Bressan"
+                           ] ;
+        owl:versionInfo    4 .
+
+<https://data.geoscience.fr/ncl/RockComp/51>
+        a                skos:Concept ;
+        rdfs:label       "flint nodule"@en , "silex"@fr ;
+        dct:description  "Roche dure, à grains très fin (calcédoine et quarts cryptocristallins, sans grains détritiques), jaune clair, brune à noire, à cassure lisse et conchoïdale, à éclat luisant, et à bords aigus et translucides."@fr ;
+        dct:source       "Foucault et Raoult, Dictionnaire de Géologie, 5ème Edition" ;
+        reg:category     <https://data.geoscience.fr/ncl/structure/Category/2> ;
+        skos:inScheme    <https://data.geoscience.fr/ncl/RockComp> ;
+        skos:notation    "51" ;
+        skos:prefLabel   "flint nodule"@en , "silex"@fr ;
+        adms:status      <http://inspire.ec.europa.eu/registry/status/valid> .
